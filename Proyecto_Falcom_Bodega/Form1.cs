@@ -21,5 +21,11 @@ namespace Proyecto_Falcom_Bodega
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Bitacora bitacora = new Bitacora();
+            bitacora.Show();
+        }
     }
 }
