@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Falcom_Bodega
 {
-    public partial class Form1 : Form
+    public partial class Clientes : Form
     {
-        public Form1()
+        public Clientes()
         {
             InitializeComponent();
         }
