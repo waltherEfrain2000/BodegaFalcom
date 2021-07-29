@@ -1,0 +1,14 @@
+C:\Users\danil\Source\Repos\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.exe.config
+C:\Users\danil\Source\Repos\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.exe
+C:\Users\danil\Source\Repos\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.pdb
+C:\Users\danil\Source\Repos\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.AssemblyReference.cache
+C:\Users\danil\Source\Repos\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Properties.Resources.resources
+C:\Users\danil\Source\Repos\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.GenerateResource.cache
+C:\Users\danil\Source\Repos\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.CoreCompileInputs.cache
+C:\Users\danil\Source\Repos\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.exe
+C:\Users\danil\Source\Repos\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.pdb
+C:\Users\danil\Source\Repos\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\System.Data.SqlClient.dll
+C:\Users\danil\Source\Repos\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\System.Data.SqlClient.xml
+C:\Users\danil\Source\Repos\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.CopyComplete
+C:\Users\danil\source\repos\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\MaterialSkin.dll
+C:\Users\danil\source\repos\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.FormularioProducto.resources
