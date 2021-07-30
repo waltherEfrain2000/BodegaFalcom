@@ -33,23 +33,23 @@ namespace Proyecto_Falcom_Bodega
             this.txtcantidad = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.txtduracion = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtnomProducto = new System.Windows.Forms.TextBox();
+            this.txtcodProducto = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtcodProducto = new System.Windows.Forms.TextBox();
-            this.txtnomProducto = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.btnInsertar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -75,6 +75,7 @@ namespace Proyecto_Falcom_Bodega
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 2;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dateTimePicker2
             // 
@@ -82,14 +83,7 @@ namespace Proyecto_Falcom_Bodega
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 3;
-            // 
-            // txtduracion
-            // 
-            this.txtduracion.Location = new System.Drawing.Point(120, 324);
-            this.txtduracion.Multiline = true;
-            this.txtduracion.Name = "txtduracion";
-            this.txtduracion.Size = new System.Drawing.Size(200, 57);
-            this.txtduracion.TabIndex = 4;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // groupBox1
             // 
@@ -105,6 +99,40 @@ namespace Proyecto_Falcom_Bodega
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Producto";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label7.Location = new System.Drawing.Point(16, 258);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Nombre Producto";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label6.Location = new System.Drawing.Point(16, 204);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(86, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Codigo Producto";
+            // 
+            // txtnomProducto
+            // 
+            this.txtnomProducto.Location = new System.Drawing.Point(121, 247);
+            this.txtnomProducto.Name = "txtnomProducto";
+            this.txtnomProducto.Size = new System.Drawing.Size(200, 29);
+            this.txtnomProducto.TabIndex = 12;
+            // 
+            // txtcodProducto
+            // 
+            this.txtcodProducto.Location = new System.Drawing.Point(121, 198);
+            this.txtcodProducto.Name = "txtcodProducto";
+            this.txtcodProducto.Size = new System.Drawing.Size(200, 29);
+            this.txtcodProducto.TabIndex = 11;
             // 
             // dataGridView1
             // 
@@ -162,40 +190,6 @@ namespace Proyecto_Falcom_Bodega
             this.label5.Text = "Duracion Promedio";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // txtcodProducto
-            // 
-            this.txtcodProducto.Location = new System.Drawing.Point(121, 198);
-            this.txtcodProducto.Name = "txtcodProducto";
-            this.txtcodProducto.Size = new System.Drawing.Size(200, 29);
-            this.txtcodProducto.TabIndex = 11;
-            // 
-            // txtnomProducto
-            // 
-            this.txtnomProducto.Location = new System.Drawing.Point(121, 247);
-            this.txtnomProducto.Name = "txtnomProducto";
-            this.txtnomProducto.Size = new System.Drawing.Size(200, 29);
-            this.txtnomProducto.TabIndex = 12;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label6.Location = new System.Drawing.Point(16, 204);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Codigo Producto";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label7.Location = new System.Drawing.Point(16, 258);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Nombre Producto";
-            // 
             // btnInsertar
             // 
             this.btnInsertar.Location = new System.Drawing.Point(802, 112);
@@ -204,6 +198,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnInsertar.TabIndex = 11;
             this.btnInsertar.Text = "Insertar";
             this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
             // button1
             // 
@@ -240,11 +235,20 @@ namespace Proyecto_Falcom_Bodega
             this.dataGridView2.Size = new System.Drawing.Size(796, 205);
             this.dataGridView2.TabIndex = 15;
             // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Location = new System.Drawing.Point(120, 341);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker3.TabIndex = 16;
+            this.dateTimePicker3.ValueChanged += new System.EventHandler(this.dateTimePicker3_ValueChanged);
+            // 
             // Frm_Inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 631);
+            this.Controls.Add(this.dateTimePicker3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -256,7 +260,6 @@ namespace Proyecto_Falcom_Bodega
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.txtduracion);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txtcantidad);
@@ -279,7 +282,6 @@ namespace Proyecto_Falcom_Bodega
         private System.Windows.Forms.TextBox txtcantidad;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox txtduracion;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtnomProducto;
@@ -296,5 +298,6 @@ namespace Proyecto_Falcom_Bodega
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
     }
 }
