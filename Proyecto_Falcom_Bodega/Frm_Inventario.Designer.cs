@@ -69,6 +69,8 @@ namespace Proyecto_Falcom_Bodega
             this.txtcantidad.Name = "txtcantidad";
             this.txtcantidad.Size = new System.Drawing.Size(200, 20);
             this.txtcantidad.TabIndex = 1;
+            this.txtcantidad.TextChanged += new System.EventHandler(this.txtcantidad_TextChanged);
+            this.txtcantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcantidad_KeyPress);
             // 
             // dateTimePicker1
             // 
@@ -139,6 +141,11 @@ namespace Proyecto_Falcom_Bodega
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(6, 29);
             this.dataGridView1.Name = "dataGridView1";
@@ -195,46 +202,72 @@ namespace Proyecto_Falcom_Bodega
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(802, 112);
+            this.btnInsertar.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnInsertar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnInsertar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnInsertar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInsertar.Location = new System.Drawing.Point(777, 98);
             this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(75, 23);
+            this.btnInsertar.Size = new System.Drawing.Size(133, 37);
             this.btnInsertar.TabIndex = 11;
             this.btnInsertar.Text = "Insertar";
-            this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsertar.UseVisualStyleBackColor = false;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
             // btnmodificar
             // 
-            this.btnmodificar.Location = new System.Drawing.Point(802, 148);
+            this.btnmodificar.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnmodificar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnmodificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnmodificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnmodificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmodificar.Location = new System.Drawing.Point(777, 148);
             this.btnmodificar.Name = "btnmodificar";
-            this.btnmodificar.Size = new System.Drawing.Size(75, 23);
+            this.btnmodificar.Size = new System.Drawing.Size(133, 38);
             this.btnmodificar.TabIndex = 12;
             this.btnmodificar.Text = "Modificar";
-            this.btnmodificar.UseVisualStyleBackColor = true;
+            this.btnmodificar.UseVisualStyleBackColor = false;
             this.btnmodificar.Click += new System.EventHandler(this.button1_Click);
             // 
             // btneliminar
             // 
-            this.btneliminar.Location = new System.Drawing.Point(802, 186);
+            this.btneliminar.BackColor = System.Drawing.Color.YellowGreen;
+            this.btneliminar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btneliminar.FlatAppearance.BorderSize = 2;
+            this.btneliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btneliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btneliminar.Location = new System.Drawing.Point(777, 205);
             this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(75, 23);
+            this.btneliminar.Size = new System.Drawing.Size(133, 42);
             this.btneliminar.TabIndex = 13;
             this.btneliminar.Text = "Eliminar";
-            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.UseVisualStyleBackColor = false;
             this.btneliminar.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnlimpiar
             // 
-            this.btnlimpiar.Location = new System.Drawing.Point(802, 222);
+            this.btnlimpiar.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnlimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnlimpiar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnlimpiar.FlatAppearance.BorderSize = 2;
+            this.btnlimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnlimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnlimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlimpiar.Location = new System.Drawing.Point(777, 266);
             this.btnlimpiar.Name = "btnlimpiar";
-            this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnlimpiar.Size = new System.Drawing.Size(131, 34);
             this.btnlimpiar.TabIndex = 14;
             this.btnlimpiar.Text = "Limpiar";
-            this.btnlimpiar.UseVisualStyleBackColor = true;
+            this.btnlimpiar.UseVisualStyleBackColor = false;
             this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(58, 414);
             this.dataGridView2.Name = "dataGridView2";

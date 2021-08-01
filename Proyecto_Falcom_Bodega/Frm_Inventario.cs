@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,6 +17,8 @@ namespace Proyecto_Falcom_Bodega
     {
 
         Conexion conexion = new Conexion();
+        private const char SignoDecimal = '.'; // Carácter separador decimal
+        private string _prevTextBoxValue; // Variable que almacena el valor anterior del Textbox
 
         public Frm_Inventario()
         {
@@ -203,6 +206,7 @@ inner join Producto as v on v.codigoProducto= p.codigoProducto", dataGridView2);
                     conexion.Busquedas1(@"Select p.codigoInventario as 'Codigo Inventario',p.codigoProducto as 'Codigo Producto', v.nombreproducto ,p.[cantidad],
 p.[fechaIngreso],p.[fechaCaducidad],p.[duracionPromedio] from [Inventario] as p
 inner join Producto as v on v.codigoProducto= p.codigoProducto", dataGridView2);
+                  
                     LimpiarCasillas();
                 }
 
@@ -255,6 +259,39 @@ inner join Producto as v on v.codigoProducto= p.codigoProducto", dataGridView2);
         private void btnlimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCasillas();
+        }
+
+        private void txtcantidad_TextChanged(object sender, EventArgs e)
+        {
+
+            var textBox = (TextBox)sender;
+            // Comprueba si el valor del TextBox se ajusta a un valor válido
+            if (Regex.IsMatch(textBox.Text, @"^(?:\d+\.?\d*)?$"))
+            {
+                // Si es válido se almacena el valor actual en la variable privada
+                _prevTextBoxValue = textBox.Text;
+            }
+            else
+            {
+                // Si no es válido se recupera el valor de la variable privada con el valor anterior
+                // Calcula el nº de caracteres después del cursor para dejar el cursor en la misma posición
+                var charsAfterCursor = textBox.TextLength - textBox.SelectionStart - textBox.SelectionLength;
+                // Recupera el valor anterior
+                textBox.Text = _prevTextBoxValue;
+                // Posiciona el cursor en la misma posición
+                textBox.SelectionStart = Math.Max(0, textBox.TextLength - charsAfterCursor);
+            }
+        }
+
+        private void txtcantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            var textBox = (TextBox)sender;
+            // Si el carácter pulsado no es un carácter válido se anula
+            e.Handled = !char.IsDigit(e.KeyChar) // No es dígito
+                        && !char.IsControl(e.KeyChar) // No es carácter de control (backspace)
+                        && (e.KeyChar != SignoDecimal // No es signo decimal o es la 1ª posición o ya hay un signo decimal
+                            || textBox.SelectionStart == 0
+                            || textBox.Text.Contains(SignoDecimal));
         }
     }
 }
