@@ -293,5 +293,11 @@ inner join Producto as v on v.codigoProducto= p.codigoProducto", dataGridView2);
                             || textBox.SelectionStart == 0
                             || textBox.Text.Contains(SignoDecimal));
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            RepoteProductosTotales repoteProductosTotales = new RepoteProductosTotales();
+            repoteProductosTotales.Show();
+        }
     }
 }
