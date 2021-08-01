@@ -32,5 +32,16 @@ namespace Proyecto_Falcom_Bodega.Properties {
                 return ((string)(this["BodegaFalcomConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-LGDBE5Q\\SQLEXPRESS;Initial Catalog=BodegaFalcom;Integrated Se" +
+            "curity=True")]
+        public string BodegaFalcomConnectionString1 {
+            get {
+                return ((string)(this["BodegaFalcomConnectionString1"]));
+            }
+        }
     }
 }

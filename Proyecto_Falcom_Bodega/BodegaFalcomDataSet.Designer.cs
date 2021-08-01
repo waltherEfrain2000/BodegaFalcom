@@ -20,9 +20,9 @@ namespace Proyecto_Falcom_Bodega {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("BodegaFalcomDataSet2")]
+    [global::System.Xml.Serialization.XmlRootAttribute("BodegaFalcomDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class BodegaFalcomDataSet2 : global::System.Data.DataSet {
+    public partial class BodegaFalcomDataSet : global::System.Data.DataSet {
         
         private BitacoraDataTable tableBitacora;
         
@@ -70,7 +70,7 @@ namespace Proyecto_Falcom_Bodega {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public BodegaFalcomDataSet2() {
+        public BodegaFalcomDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -81,7 +81,7 @@ namespace Proyecto_Falcom_Bodega {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected BodegaFalcomDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected BodegaFalcomDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -297,7 +297,7 @@ namespace Proyecto_Falcom_Bodega {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            BodegaFalcomDataSet2 cln = ((BodegaFalcomDataSet2)(base.Clone()));
+            BodegaFalcomDataSet cln = ((BodegaFalcomDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -469,9 +469,9 @@ namespace Proyecto_Falcom_Bodega {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "BodegaFalcomDataSet2";
+            this.DataSetName = "BodegaFalcomDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/BodegaFalcomDataSet2.xsd";
+            this.Namespace = "http://tempuri.org/BodegaFalcomDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableBitacora = new BitacoraDataTable();
@@ -615,7 +615,7 @@ namespace Proyecto_Falcom_Bodega {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            BodegaFalcomDataSet2 ds = new BodegaFalcomDataSet2();
+            BodegaFalcomDataSet ds = new BodegaFalcomDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -998,7 +998,7 @@ namespace Proyecto_Falcom_Bodega {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BodegaFalcomDataSet2 ds = new BodegaFalcomDataSet2();
+                BodegaFalcomDataSet ds = new BodegaFalcomDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1308,7 +1308,7 @@ namespace Proyecto_Falcom_Bodega {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BodegaFalcomDataSet2 ds = new BodegaFalcomDataSet2();
+                BodegaFalcomDataSet ds = new BodegaFalcomDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1742,7 +1742,7 @@ namespace Proyecto_Falcom_Bodega {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BodegaFalcomDataSet2 ds = new BodegaFalcomDataSet2();
+                BodegaFalcomDataSet ds = new BodegaFalcomDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2020,7 +2020,7 @@ namespace Proyecto_Falcom_Bodega {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BodegaFalcomDataSet2 ds = new BodegaFalcomDataSet2();
+                BodegaFalcomDataSet ds = new BodegaFalcomDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2333,7 +2333,7 @@ namespace Proyecto_Falcom_Bodega {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BodegaFalcomDataSet2 ds = new BodegaFalcomDataSet2();
+                BodegaFalcomDataSet ds = new BodegaFalcomDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2668,7 +2668,7 @@ namespace Proyecto_Falcom_Bodega {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BodegaFalcomDataSet2 ds = new BodegaFalcomDataSet2();
+                BodegaFalcomDataSet ds = new BodegaFalcomDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2988,7 +2988,7 @@ namespace Proyecto_Falcom_Bodega {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BodegaFalcomDataSet2 ds = new BodegaFalcomDataSet2();
+                BodegaFalcomDataSet ds = new BodegaFalcomDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3301,7 +3301,7 @@ namespace Proyecto_Falcom_Bodega {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BodegaFalcomDataSet2 ds = new BodegaFalcomDataSet2();
+                BodegaFalcomDataSet ds = new BodegaFalcomDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3626,7 +3626,7 @@ namespace Proyecto_Falcom_Bodega {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BodegaFalcomDataSet2 ds = new BodegaFalcomDataSet2();
+                BodegaFalcomDataSet ds = new BodegaFalcomDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3944,7 +3944,7 @@ namespace Proyecto_Falcom_Bodega {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BodegaFalcomDataSet2 ds = new BodegaFalcomDataSet2();
+                BodegaFalcomDataSet ds = new BodegaFalcomDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4263,7 +4263,7 @@ namespace Proyecto_Falcom_Bodega {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BodegaFalcomDataSet2 ds = new BodegaFalcomDataSet2();
+                BodegaFalcomDataSet ds = new BodegaFalcomDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -6153,7 +6153,7 @@ namespace Proyecto_Falcom_Bodega {
         }
     }
 }
-namespace Proyecto_Falcom_Bodega.BodegaFalcomDataSet2TableAdapters {
+namespace Proyecto_Falcom_Bodega.BodegaFalcomDataSetTableAdapters {
     
     
     /// <summary>
@@ -6332,7 +6332,7 @@ SELECT CodigoBitacora, CodigoInventario, CodigoSolicitud, CodigoCliente, CodigoC
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6350,7 +6350,7 @@ SELECT CodigoBitacora, CodigoInventario, CodigoSolicitud, CodigoCliente, CodigoC
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BodegaFalcomDataSet2.BitacoraDataTable dataTable) {
+        public virtual int Fill(BodegaFalcomDataSet.BitacoraDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6363,9 +6363,9 @@ SELECT CodigoBitacora, CodigoInventario, CodigoSolicitud, CodigoCliente, CodigoC
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BodegaFalcomDataSet2.BitacoraDataTable GetData() {
+        public virtual BodegaFalcomDataSet.BitacoraDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BodegaFalcomDataSet2.BitacoraDataTable dataTable = new BodegaFalcomDataSet2.BitacoraDataTable();
+            BodegaFalcomDataSet.BitacoraDataTable dataTable = new BodegaFalcomDataSet.BitacoraDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6373,14 +6373,14 @@ SELECT CodigoBitacora, CodigoInventario, CodigoSolicitud, CodigoCliente, CodigoC
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2.BitacoraDataTable dataTable) {
+        public virtual int Update(BodegaFalcomDataSet.BitacoraDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2 dataSet) {
+        public virtual int Update(BodegaFalcomDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Bitacora");
         }
         
@@ -6682,7 +6682,7 @@ SELECT CodigoCliente, NombreCliente, Direccion, Telefono FROM Clientes WHERE (Co
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6699,7 +6699,7 @@ SELECT CodigoCliente, NombreCliente, Direccion, Telefono FROM Clientes WHERE (Co
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BodegaFalcomDataSet2.ClientesDataTable dataTable) {
+        public virtual int Fill(BodegaFalcomDataSet.ClientesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6712,9 +6712,9 @@ SELECT CodigoCliente, NombreCliente, Direccion, Telefono FROM Clientes WHERE (Co
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BodegaFalcomDataSet2.ClientesDataTable GetData() {
+        public virtual BodegaFalcomDataSet.ClientesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BodegaFalcomDataSet2.ClientesDataTable dataTable = new BodegaFalcomDataSet2.ClientesDataTable();
+            BodegaFalcomDataSet.ClientesDataTable dataTable = new BodegaFalcomDataSet.ClientesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6722,14 +6722,14 @@ SELECT CodigoCliente, NombreCliente, Direccion, Telefono FROM Clientes WHERE (Co
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2.ClientesDataTable dataTable) {
+        public virtual int Update(BodegaFalcomDataSet.ClientesDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2 dataSet) {
+        public virtual int Update(BodegaFalcomDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Clientes");
         }
         
@@ -7118,7 +7118,7 @@ SELECT codigoColaborador, codigoDepartameto, nombreColaborador, identidadColabor
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7138,7 +7138,7 @@ SELECT codigoColaborador, codigoDepartameto, nombreColaborador, identidadColabor
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BodegaFalcomDataSet2.colaboradoresDataTable dataTable) {
+        public virtual int Fill(BodegaFalcomDataSet.colaboradoresDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7151,9 +7151,9 @@ SELECT codigoColaborador, codigoDepartameto, nombreColaborador, identidadColabor
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BodegaFalcomDataSet2.colaboradoresDataTable GetData() {
+        public virtual BodegaFalcomDataSet.colaboradoresDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BodegaFalcomDataSet2.colaboradoresDataTable dataTable = new BodegaFalcomDataSet2.colaboradoresDataTable();
+            BodegaFalcomDataSet.colaboradoresDataTable dataTable = new BodegaFalcomDataSet.colaboradoresDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7161,14 +7161,14 @@ SELECT codigoColaborador, codigoDepartameto, nombreColaborador, identidadColabor
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2.colaboradoresDataTable dataTable) {
+        public virtual int Update(BodegaFalcomDataSet.colaboradoresDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2 dataSet) {
+        public virtual int Update(BodegaFalcomDataSet dataSet) {
             return this.Adapter.Update(dataSet, "colaboradores");
         }
         
@@ -7654,7 +7654,7 @@ SELECT codigoDepartamento, nombreDepartamento FROM departamentos WHERE (codigoDe
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7671,7 +7671,7 @@ SELECT codigoDepartamento, nombreDepartamento FROM departamentos WHERE (codigoDe
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BodegaFalcomDataSet2.departamentosDataTable dataTable) {
+        public virtual int Fill(BodegaFalcomDataSet.departamentosDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7684,9 +7684,9 @@ SELECT codigoDepartamento, nombreDepartamento FROM departamentos WHERE (codigoDe
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BodegaFalcomDataSet2.departamentosDataTable GetData() {
+        public virtual BodegaFalcomDataSet.departamentosDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BodegaFalcomDataSet2.departamentosDataTable dataTable = new BodegaFalcomDataSet2.departamentosDataTable();
+            BodegaFalcomDataSet.departamentosDataTable dataTable = new BodegaFalcomDataSet.departamentosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7694,14 +7694,14 @@ SELECT codigoDepartamento, nombreDepartamento FROM departamentos WHERE (codigoDe
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2.departamentosDataTable dataTable) {
+        public virtual int Update(BodegaFalcomDataSet.departamentosDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2 dataSet) {
+        public virtual int Update(BodegaFalcomDataSet dataSet) {
             return this.Adapter.Update(dataSet, "departamentos");
         }
         
@@ -7983,7 +7983,7 @@ SELECT codigoDetalleSolicitud, codigoSolicitud, codigoInventario, cantidad FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8001,7 +8001,7 @@ SELECT codigoDetalleSolicitud, codigoSolicitud, codigoInventario, cantidad FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BodegaFalcomDataSet2.DetalleSolicitudDataTable dataTable) {
+        public virtual int Fill(BodegaFalcomDataSet.DetalleSolicitudDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8014,9 +8014,9 @@ SELECT codigoDetalleSolicitud, codigoSolicitud, codigoInventario, cantidad FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BodegaFalcomDataSet2.DetalleSolicitudDataTable GetData() {
+        public virtual BodegaFalcomDataSet.DetalleSolicitudDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BodegaFalcomDataSet2.DetalleSolicitudDataTable dataTable = new BodegaFalcomDataSet2.DetalleSolicitudDataTable();
+            BodegaFalcomDataSet.DetalleSolicitudDataTable dataTable = new BodegaFalcomDataSet.DetalleSolicitudDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8024,14 +8024,14 @@ SELECT codigoDetalleSolicitud, codigoSolicitud, codigoInventario, cantidad FROM 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2.DetalleSolicitudDataTable dataTable) {
+        public virtual int Update(BodegaFalcomDataSet.DetalleSolicitudDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2 dataSet) {
+        public virtual int Update(BodegaFalcomDataSet dataSet) {
             return this.Adapter.Update(dataSet, "DetalleSolicitud");
         }
         
@@ -8318,7 +8318,7 @@ SELECT codigoInventario, codigoProducto, cantidad, fechaIngreso, fechaCaducidad,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8336,7 +8336,7 @@ SELECT codigoInventario, codigoProducto, cantidad, fechaIngreso, fechaCaducidad,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BodegaFalcomDataSet2.InventarioDataTable dataTable) {
+        public virtual int Fill(BodegaFalcomDataSet.InventarioDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8349,9 +8349,9 @@ SELECT codigoInventario, codigoProducto, cantidad, fechaIngreso, fechaCaducidad,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BodegaFalcomDataSet2.InventarioDataTable GetData() {
+        public virtual BodegaFalcomDataSet.InventarioDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BodegaFalcomDataSet2.InventarioDataTable dataTable = new BodegaFalcomDataSet2.InventarioDataTable();
+            BodegaFalcomDataSet.InventarioDataTable dataTable = new BodegaFalcomDataSet.InventarioDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8359,14 +8359,14 @@ SELECT codigoInventario, codigoProducto, cantidad, fechaIngreso, fechaCaducidad,
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2.InventarioDataTable dataTable) {
+        public virtual int Update(BodegaFalcomDataSet.InventarioDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2 dataSet) {
+        public virtual int Update(BodegaFalcomDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Inventario");
         }
         
@@ -8776,7 +8776,7 @@ SELECT codigoProducto, nombreproducto, costo, peso, descripcion FROM Producto WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8794,7 +8794,7 @@ SELECT codigoProducto, nombreproducto, costo, peso, descripcion FROM Producto WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BodegaFalcomDataSet2.ProductoDataTable dataTable) {
+        public virtual int Fill(BodegaFalcomDataSet.ProductoDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8807,9 +8807,9 @@ SELECT codigoProducto, nombreproducto, costo, peso, descripcion FROM Producto WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BodegaFalcomDataSet2.ProductoDataTable GetData() {
+        public virtual BodegaFalcomDataSet.ProductoDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BodegaFalcomDataSet2.ProductoDataTable dataTable = new BodegaFalcomDataSet2.ProductoDataTable();
+            BodegaFalcomDataSet.ProductoDataTable dataTable = new BodegaFalcomDataSet.ProductoDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8817,14 +8817,14 @@ SELECT codigoProducto, nombreproducto, costo, peso, descripcion FROM Producto WH
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2.ProductoDataTable dataTable) {
+        public virtual int Update(BodegaFalcomDataSet.ProductoDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2 dataSet) {
+        public virtual int Update(BodegaFalcomDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Producto");
         }
         
@@ -9194,7 +9194,7 @@ SELECT codigoSolicitud, codigoCliente, codigoColaborador, fechaSolicitud FROM So
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9212,7 +9212,7 @@ SELECT codigoSolicitud, codigoCliente, codigoColaborador, fechaSolicitud FROM So
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BodegaFalcomDataSet2.SolicitudesDataTable dataTable) {
+        public virtual int Fill(BodegaFalcomDataSet.SolicitudesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9225,9 +9225,9 @@ SELECT codigoSolicitud, codigoCliente, codigoColaborador, fechaSolicitud FROM So
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BodegaFalcomDataSet2.SolicitudesDataTable GetData() {
+        public virtual BodegaFalcomDataSet.SolicitudesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BodegaFalcomDataSet2.SolicitudesDataTable dataTable = new BodegaFalcomDataSet2.SolicitudesDataTable();
+            BodegaFalcomDataSet.SolicitudesDataTable dataTable = new BodegaFalcomDataSet.SolicitudesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9235,14 +9235,14 @@ SELECT codigoSolicitud, codigoCliente, codigoColaborador, fechaSolicitud FROM So
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2.SolicitudesDataTable dataTable) {
+        public virtual int Update(BodegaFalcomDataSet.SolicitudesDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2 dataSet) {
+        public virtual int Update(BodegaFalcomDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Solicitudes");
         }
         
@@ -9514,7 +9514,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9532,7 +9532,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BodegaFalcomDataSet2.UsuariosDataTable dataTable) {
+        public virtual int Fill(BodegaFalcomDataSet.UsuariosDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9545,9 +9545,9 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BodegaFalcomDataSet2.UsuariosDataTable GetData() {
+        public virtual BodegaFalcomDataSet.UsuariosDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BodegaFalcomDataSet2.UsuariosDataTable dataTable = new BodegaFalcomDataSet2.UsuariosDataTable();
+            BodegaFalcomDataSet.UsuariosDataTable dataTable = new BodegaFalcomDataSet.UsuariosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9555,14 +9555,14 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2.UsuariosDataTable dataTable) {
+        public virtual int Update(BodegaFalcomDataSet.UsuariosDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BodegaFalcomDataSet2 dataSet) {
+        public virtual int Update(BodegaFalcomDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Usuarios");
         }
         
@@ -9886,7 +9886,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9904,7 +9904,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BodegaFalcomDataSet2.MostrarProductosDataTable dataTable) {
+        public virtual int Fill(BodegaFalcomDataSet.MostrarProductosDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9917,9 +9917,9 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BodegaFalcomDataSet2.MostrarProductosDataTable GetData() {
+        public virtual BodegaFalcomDataSet.MostrarProductosDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BodegaFalcomDataSet2.MostrarProductosDataTable dataTable = new BodegaFalcomDataSet2.MostrarProductosDataTable();
+            BodegaFalcomDataSet.MostrarProductosDataTable dataTable = new BodegaFalcomDataSet.MostrarProductosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -10059,7 +10059,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10077,7 +10077,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BodegaFalcomDataSet2.MostrarProductos2DataTable dataTable) {
+        public virtual int Fill(BodegaFalcomDataSet.MostrarProductos2DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -10090,9 +10090,9 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BodegaFalcomDataSet2.MostrarProductos2DataTable GetData() {
+        public virtual BodegaFalcomDataSet.MostrarProductos2DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BodegaFalcomDataSet2.MostrarProductos2DataTable dataTable = new BodegaFalcomDataSet2.MostrarProductos2DataTable();
+            BodegaFalcomDataSet.MostrarProductos2DataTable dataTable = new BodegaFalcomDataSet.MostrarProductos2DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -10373,7 +10373,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(BodegaFalcomDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(BodegaFalcomDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._departamentosTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.departamentos.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -10464,7 +10464,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(BodegaFalcomDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(BodegaFalcomDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._departamentosTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.departamentos.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -10546,7 +10546,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(BodegaFalcomDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(BodegaFalcomDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._usuariosTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Usuarios.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -10652,7 +10652,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(BodegaFalcomDataSet2 dataSet) {
+        public virtual int UpdateAll(BodegaFalcomDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

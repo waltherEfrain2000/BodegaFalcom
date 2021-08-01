@@ -2,7 +2,6 @@ C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_B
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.exe
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.pdb
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\bin\Debug\MaterialSkin.dll
-C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csprojAssemblyReference.cache
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Frm_Inventario.resources
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Properties.Resources.resources
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.GenerateResource.cache
@@ -10,7 +9,6 @@ C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_B
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.CopyComplete
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.exe
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.pdb
-C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.RepoteProductosTotales.resources
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\obj\Debug\RdlCompile.cache
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\obj\Debug\RdlCompile.compiled
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\bin\Debug\SqlServerTypes\x64\msvcr120.dll
@@ -71,3 +69,4 @@ C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_B
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.ReporteProductosTotales.resources

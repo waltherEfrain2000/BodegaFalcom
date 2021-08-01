@@ -296,8 +296,13 @@ inner join Producto as v on v.codigoProducto= p.codigoProducto", dataGridView2);
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            RepoteProductosTotales repoteProductosTotales = new RepoteProductosTotales();
-            repoteProductosTotales.Show();
+            ReporteProductosTotales reporteProductosTotales = new ReporteProductosTotales();
+            reporteProductosTotales.Show();
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+           
         }
     }
 }
