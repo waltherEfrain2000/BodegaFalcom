@@ -1,0 +1,10 @@
+C:\Users\brian\OneDrive\Documentos\GitHub\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.exe.config
+C:\Users\brian\OneDrive\Documentos\GitHub\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.exe
+C:\Users\brian\OneDrive\Documentos\GitHub\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.pdb
+C:\Users\brian\OneDrive\Documentos\GitHub\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.AssemblyReference.cache
+C:\Users\brian\OneDrive\Documentos\GitHub\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Clientes.resources
+C:\Users\brian\OneDrive\Documentos\GitHub\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Properties.Resources.resources
+C:\Users\brian\OneDrive\Documentos\GitHub\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.GenerateResource.cache
+C:\Users\brian\OneDrive\Documentos\GitHub\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.CoreCompileInputs.cache
+C:\Users\brian\OneDrive\Documentos\GitHub\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.exe
+C:\Users\brian\OneDrive\Documentos\GitHub\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.pdb
