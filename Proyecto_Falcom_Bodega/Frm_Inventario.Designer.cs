@@ -45,9 +45,9 @@ namespace Proyecto_Falcom_Bodega
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnInsertar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnmodificar = new System.Windows.Forms.Button();
+            this.btneliminar = new System.Windows.Forms.Button();
+            this.btnlimpiar = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
@@ -57,6 +57,7 @@ namespace Proyecto_Falcom_Bodega
             // 
             // txtcodinventario
             // 
+            this.txtcodinventario.Enabled = false;
             this.txtcodinventario.Location = new System.Drawing.Point(120, 83);
             this.txtcodinventario.Name = "txtcodinventario";
             this.txtcodinventario.Size = new System.Drawing.Size(200, 20);
@@ -122,6 +123,7 @@ namespace Proyecto_Falcom_Bodega
             // 
             // txtnomProducto
             // 
+            this.txtnomProducto.Enabled = false;
             this.txtnomProducto.Location = new System.Drawing.Point(121, 247);
             this.txtnomProducto.Name = "txtnomProducto";
             this.txtnomProducto.Size = new System.Drawing.Size(200, 29);
@@ -129,6 +131,7 @@ namespace Proyecto_Falcom_Bodega
             // 
             // txtcodProducto
             // 
+            this.txtcodProducto.Enabled = false;
             this.txtcodProducto.Location = new System.Drawing.Point(121, 198);
             this.txtcodProducto.Name = "txtcodProducto";
             this.txtcodProducto.Size = new System.Drawing.Size(200, 29);
@@ -200,32 +203,35 @@ namespace Proyecto_Falcom_Bodega
             this.btnInsertar.UseVisualStyleBackColor = true;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
-            // button1
+            // btnmodificar
             // 
-            this.button1.Location = new System.Drawing.Point(802, 148);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Modificar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnmodificar.Location = new System.Drawing.Point(802, 148);
+            this.btnmodificar.Name = "btnmodificar";
+            this.btnmodificar.Size = new System.Drawing.Size(75, 23);
+            this.btnmodificar.TabIndex = 12;
+            this.btnmodificar.Text = "Modificar";
+            this.btnmodificar.UseVisualStyleBackColor = true;
+            this.btnmodificar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btneliminar
             // 
-            this.button2.Location = new System.Drawing.Point(802, 186);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btneliminar.Location = new System.Drawing.Point(802, 186);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(75, 23);
+            this.btneliminar.TabIndex = 13;
+            this.btneliminar.Text = "Eliminar";
+            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnlimpiar
             // 
-            this.button3.Location = new System.Drawing.Point(802, 222);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Limpiar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnlimpiar.Location = new System.Drawing.Point(802, 222);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnlimpiar.TabIndex = 14;
+            this.btnlimpiar.Text = "Limpiar";
+            this.btnlimpiar.UseVisualStyleBackColor = true;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
             // dataGridView2
             // 
@@ -234,6 +240,7 @@ namespace Proyecto_Falcom_Bodega
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(796, 205);
             this.dataGridView2.TabIndex = 15;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // dateTimePicker3
             // 
@@ -250,9 +257,9 @@ namespace Proyecto_Falcom_Bodega
             this.ClientSize = new System.Drawing.Size(922, 631);
             this.Controls.Add(this.dateTimePicker3);
             this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnlimpiar);
+            this.Controls.Add(this.btneliminar);
+            this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.btnInsertar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -294,9 +301,9 @@ namespace Proyecto_Falcom_Bodega
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnInsertar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnmodificar;
+        private System.Windows.Forms.Button btneliminar;
+        private System.Windows.Forms.Button btnlimpiar;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
     }
