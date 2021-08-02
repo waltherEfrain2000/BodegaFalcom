@@ -26,12 +26,18 @@ namespace Proyecto_Falcom_Bodega.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+<<<<<<< HEAD
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local);Initial Catalog=BodegaFalcom;Integrated Security=True")]
+=======
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local)\\SQLEXPRESS;Initial Catalog=BodegaFalcom;Integrated Security=T" +
+            "rue")]
+>>>>>>> Feature_Colaboradores
         public string BodegaFalcomConnectionString {
             get {
                 return ((string)(this["BodegaFalcomConnectionString"]));
             }
         }
+<<<<<<< HEAD
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -43,5 +49,7 @@ namespace Proyecto_Falcom_Bodega.Properties {
                 return ((string)(this["BodegaFalcomConnectionString1"]));
             }
         }
+=======
+>>>>>>> Feature_Colaboradores
     }
 }

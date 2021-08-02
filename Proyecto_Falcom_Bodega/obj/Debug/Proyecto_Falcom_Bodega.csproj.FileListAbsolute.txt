@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.exe.config
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.exe
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.pdb
@@ -70,3 +71,78 @@ C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_B
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\walth\OneDrive\Documents\2p 2021\inteligence business\Proyecto_Falcom_Bodega\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.ReporteProductosTotales.resources
+=======
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.exe.config
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.exe
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.pdb
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csprojAssemblyReference.cache
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Colaboradores.resources
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Form1.resources
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Properties.Resources.resources
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.GenerateResource.cache
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.CoreCompileInputs.cache
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.exe
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.pdb
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.ReporteColaborador.resources
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\obj\Debug\RdlCompile.cache
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\obj\Debug\RdlCompile.compiled
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\EnvDTE.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\stdole.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.MSXML.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\proyect falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.CopyComplete
+>>>>>>> Feature_Colaboradores

@@ -4,12 +4,20 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
+<<<<<<< HEAD
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BodegaFalcomConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BodegaFalcomConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Proyecto_Falcom_Bodega.Properties.Settings.GlobalReference.Default.BodegaFalcomConnectionString1" Provider="System.Data.SqlClient" />
+=======
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BodegaFalcomConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BodegaFalcomConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Proyecto_Falcom_Bodega.Properties.Settings.GlobalReference.Default.BodegaFalcomConnectionString" Provider="System.Data.SqlClient" />
+>>>>>>> Feature_Colaboradores
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BitacoraTableAdapter" GeneratorDataComponentClassName="BitacoraTableAdapter" Name="Bitacora" UserDataComponentName="BitacoraTableAdapter">
             <MainSource>
+<<<<<<< HEAD
               <DbSource ConnectionRef="BodegaFalcomConnectionString1 (Settings)" DbObjectName="BodegaFalcom.dbo.Bitacora" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+=======
+              <DbSource ConnectionRef="BodegaFalcomConnectionString (Settings)" DbObjectName="BodegaFalcom.dbo.Bitacora" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+>>>>>>> Feature_Colaboradores
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Bitacora] WHERE (([CodigoBitacora] = @Original_CodigoBitacora) AND ([CodigoInventario] = @Original_CodigoInventario) AND ([CodigoSolicitud] = @Original_CodigoSolicitud) AND ([CodigoCliente] = @Original_CodigoCliente) AND ([CodigoColaborador] = @Original_CodigoColaborador) AND ([Descripcion] = @Original_Descripcion) AND ([FechaBitacora] = @Original_FechaBitacora))</CommandText>
@@ -81,7 +89,11 @@ SELECT CodigoBitacora, CodigoInventario, CodigoSolicitud, CodigoCliente, CodigoC
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ClientesTableAdapter" GeneratorDataComponentClassName="ClientesTableAdapter" Name="Clientes" UserDataComponentName="ClientesTableAdapter">
             <MainSource>
+<<<<<<< HEAD
               <DbSource ConnectionRef="BodegaFalcomConnectionString1 (Settings)" DbObjectName="BodegaFalcom.dbo.Clientes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+=======
+              <DbSource ConnectionRef="BodegaFalcomConnectionString (Settings)" DbObjectName="BodegaFalcom.dbo.Clientes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+>>>>>>> Feature_Colaboradores
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Clientes] WHERE (([CodigoCliente] = @Original_CodigoCliente) AND ([NombreCliente] = @Original_NombreCliente) AND ([Direccion] = @Original_Direccion) AND ([Telefono] = @Original_Telefono))</CommandText>
@@ -138,7 +150,11 @@ SELECT CodigoCliente, NombreCliente, Direccion, Telefono FROM Clientes WHERE (Co
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="colaboradoresTableAdapter" GeneratorDataComponentClassName="colaboradoresTableAdapter" Name="colaboradores" UserDataComponentName="colaboradoresTableAdapter">
             <MainSource>
+<<<<<<< HEAD
               <DbSource ConnectionRef="BodegaFalcomConnectionString1 (Settings)" DbObjectName="BodegaFalcom.dbo.colaboradores" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+=======
+              <DbSource ConnectionRef="BodegaFalcomConnectionString (Settings)" DbObjectName="BodegaFalcom.dbo.colaboradores" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+>>>>>>> Feature_Colaboradores
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[colaboradores] WHERE (([codigoColaborador] = @Original_codigoColaborador) AND ([codigoDepartameto] = @Original_codigoDepartameto) AND ([nombreColaborador] = @Original_nombreColaborador) AND ([identidadColaborador] = @Original_identidadColaborador) AND ([fechaNacimiento] = @Original_fechaNacimiento) AND ([fechaIngreso] = @Original_fechaIngreso) AND ((@IsNull_fechaDeBaja = 1 AND [fechaDeBaja] IS NULL) OR ([fechaDeBaja] = @Original_fechaDeBaja)) AND ((@IsNull_correoColaborador = 1 AND [correoColaborador] IS NULL) OR ([correoColaborador] = @Original_correoColaborador)) AND ([salarioColaborador] = @Original_salarioColaborador) AND ([telefonoColaborador] = @Original_telefonoColaborador) AND ([estadoCivilColaborador] = @Original_estadoCivilColaborador) AND ([estadoEmpresarial] = @Original_estadoEmpresarial))</CommandText>
@@ -239,7 +255,11 @@ SELECT codigoColaborador, codigoDepartameto, nombreColaborador, identidadColabor
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="departamentosTableAdapter" GeneratorDataComponentClassName="departamentosTableAdapter" Name="departamentos" UserDataComponentName="departamentosTableAdapter">
             <MainSource>
+<<<<<<< HEAD
               <DbSource ConnectionRef="BodegaFalcomConnectionString1 (Settings)" DbObjectName="BodegaFalcom.dbo.departamentos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+=======
+              <DbSource ConnectionRef="BodegaFalcomConnectionString (Settings)" DbObjectName="BodegaFalcom.dbo.departamentos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+>>>>>>> Feature_Colaboradores
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[departamentos] WHERE (([codigoDepartamento] = @Original_codigoDepartamento) AND ([nombreDepartamento] = @Original_nombreDepartamento))</CommandText>
@@ -286,7 +306,11 @@ SELECT codigoDepartamento, nombreDepartamento FROM departamentos WHERE (codigoDe
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DetalleSolicitudTableAdapter" GeneratorDataComponentClassName="DetalleSolicitudTableAdapter" Name="DetalleSolicitud" UserDataComponentName="DetalleSolicitudTableAdapter">
             <MainSource>
+<<<<<<< HEAD
               <DbSource ConnectionRef="BodegaFalcomConnectionString1 (Settings)" DbObjectName="BodegaFalcom.dbo.DetalleSolicitud" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+=======
+              <DbSource ConnectionRef="BodegaFalcomConnectionString (Settings)" DbObjectName="BodegaFalcom.dbo.DetalleSolicitud" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+>>>>>>> Feature_Colaboradores
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[DetalleSolicitud] WHERE (([codigoDetalleSolicitud] = @Original_codigoDetalleSolicitud) AND ([codigoSolicitud] = @Original_codigoSolicitud) AND ([codigoInventario] = @Original_codigoInventario) AND ([cantidad] = @Original_cantidad))</CommandText>
@@ -343,7 +367,11 @@ SELECT codigoDetalleSolicitud, codigoSolicitud, codigoInventario, cantidad FROM 
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="InventarioTableAdapter" GeneratorDataComponentClassName="InventarioTableAdapter" Name="Inventario" UserDataComponentName="InventarioTableAdapter">
             <MainSource>
+<<<<<<< HEAD
               <DbSource ConnectionRef="BodegaFalcomConnectionString1 (Settings)" DbObjectName="BodegaFalcom.dbo.Inventario" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+=======
+              <DbSource ConnectionRef="BodegaFalcomConnectionString (Settings)" DbObjectName="BodegaFalcom.dbo.Inventario" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+>>>>>>> Feature_Colaboradores
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Inventario] WHERE (([codigoInventario] = @Original_codigoInventario) AND ((@IsNull_codigoProducto = 1 AND [codigoProducto] IS NULL) OR ([codigoProducto] = @Original_codigoProducto)) AND ((@IsNull_cantidad = 1 AND [cantidad] IS NULL) OR ([cantidad] = @Original_cantidad)) AND ((@IsNull_fechaIngreso = 1 AND [fechaIngreso] IS NULL) OR ([fechaIngreso] = @Original_fechaIngreso)) AND ((@IsNull_fechaCaducidad = 1 AND [fechaCaducidad] IS NULL) OR ([fechaCaducidad] = @Original_fechaCaducidad)) AND ((@IsNull_duracionPromedio = 1 AND [duracionPromedio] IS NULL) OR ([duracionPromedio] = @Original_duracionPromedio)))</CommandText>
@@ -354,11 +382,19 @@ SELECT codigoDetalleSolicitud, codigoSolicitud, codigoInventario, cantidad FROM 
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cantidad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cantidad" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_cantidad" Precision="8" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="cantidad" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fechaIngreso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fechaIngreso" SourceColumnNullMapping="true" SourceVersion="Original" />
+<<<<<<< HEAD
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_fechaIngreso" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="fechaIngreso" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fechaCaducidad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fechaCaducidad" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_fechaCaducidad" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="fechaCaducidad" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_duracionPromedio" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="duracionPromedio" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_duracionPromedio" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="duracionPromedio" SourceColumnNullMapping="false" SourceVersion="Original" />
+=======
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_fechaIngreso" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fechaIngreso" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fechaCaducidad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fechaCaducidad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_fechaCaducidad" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fechaCaducidad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_duracionPromedio" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="duracionPromedio" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_duracionPromedio" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="duracionPromedio" SourceColumnNullMapping="false" SourceVersion="Original" />
+>>>>>>> Feature_Colaboradores
                     </Parameters>
                   </DbCommand>
                 </DeleteCommand>
@@ -369,9 +405,15 @@ SELECT codigoInventario, codigoProducto, cantidad, fechaIngreso, fechaCaducidad,
                     <Parameters>
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@codigoProducto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="codigoProducto" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@cantidad" Precision="8" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="cantidad" SourceColumnNullMapping="false" SourceVersion="Current" />
+<<<<<<< HEAD
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@fechaIngreso" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="fechaIngreso" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@fechaCaducidad" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="fechaCaducidad" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@duracionPromedio" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="duracionPromedio" SourceColumnNullMapping="false" SourceVersion="Current" />
+=======
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@fechaIngreso" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fechaIngreso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@fechaCaducidad" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fechaCaducidad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@duracionPromedio" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="duracionPromedio" SourceColumnNullMapping="false" SourceVersion="Current" />
+>>>>>>> Feature_Colaboradores
                     </Parameters>
                   </DbCommand>
                 </InsertCommand>
@@ -388,20 +430,34 @@ SELECT codigoInventario, codigoProducto, cantidad, fechaIngreso, fechaCaducidad,
                     <Parameters>
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@codigoProducto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="codigoProducto" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@cantidad" Precision="8" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="cantidad" SourceColumnNullMapping="false" SourceVersion="Current" />
+<<<<<<< HEAD
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@fechaIngreso" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="fechaIngreso" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@fechaCaducidad" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="fechaCaducidad" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@duracionPromedio" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="duracionPromedio" SourceColumnNullMapping="false" SourceVersion="Current" />
+=======
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@fechaIngreso" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fechaIngreso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@fechaCaducidad" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fechaCaducidad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@duracionPromedio" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="duracionPromedio" SourceColumnNullMapping="false" SourceVersion="Current" />
+>>>>>>> Feature_Colaboradores
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_codigoInventario" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="codigoInventario" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_codigoProducto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="codigoProducto" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_codigoProducto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="codigoProducto" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_cantidad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cantidad" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_cantidad" Precision="8" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="cantidad" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fechaIngreso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fechaIngreso" SourceColumnNullMapping="true" SourceVersion="Original" />
+<<<<<<< HEAD
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_fechaIngreso" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="fechaIngreso" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fechaCaducidad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fechaCaducidad" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_fechaCaducidad" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="fechaCaducidad" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_duracionPromedio" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="duracionPromedio" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_duracionPromedio" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="duracionPromedio" SourceColumnNullMapping="false" SourceVersion="Original" />
+=======
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_fechaIngreso" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fechaIngreso" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fechaCaducidad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fechaCaducidad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_fechaCaducidad" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="fechaCaducidad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_duracionPromedio" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="duracionPromedio" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_duracionPromedio" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="duracionPromedio" SourceColumnNullMapping="false" SourceVersion="Original" />
+>>>>>>> Feature_Colaboradores
                       <Parameter AllowDbNull="false" AutogeneratedName="codigoInventario" ColumnName="codigoInventario" DataSourceName="BodegaFalcom.dbo.Inventario" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@codigoInventario" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="codigoInventario" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
@@ -420,7 +476,11 @@ SELECT codigoInventario, codigoProducto, cantidad, fechaIngreso, fechaCaducidad,
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProductoTableAdapter" GeneratorDataComponentClassName="ProductoTableAdapter" Name="Producto" UserDataComponentName="ProductoTableAdapter">
             <MainSource>
+<<<<<<< HEAD
               <DbSource ConnectionRef="BodegaFalcomConnectionString1 (Settings)" DbObjectName="BodegaFalcom.dbo.Producto" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+=======
+              <DbSource ConnectionRef="BodegaFalcomConnectionString (Settings)" DbObjectName="BodegaFalcom.dbo.Producto" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+>>>>>>> Feature_Colaboradores
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Producto] WHERE (([codigoProducto] = @Original_codigoProducto) AND ((@IsNull_nombreproducto = 1 AND [nombreproducto] IS NULL) OR ([nombreproducto] = @Original_nombreproducto)) AND ((@IsNull_costo = 1 AND [costo] IS NULL) OR ([costo] = @Original_costo)) AND ((@IsNull_peso = 1 AND [peso] IS NULL) OR ([peso] = @Original_peso)) AND ((@IsNull_descripcion = 1 AND [descripcion] IS NULL) OR ([descripcion] = @Original_descripcion)))</CommandText>
@@ -490,7 +550,11 @@ SELECT codigoProducto, nombreproducto, costo, peso, descripcion FROM Producto WH
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SolicitudesTableAdapter" GeneratorDataComponentClassName="SolicitudesTableAdapter" Name="Solicitudes" UserDataComponentName="SolicitudesTableAdapter">
             <MainSource>
+<<<<<<< HEAD
               <DbSource ConnectionRef="BodegaFalcomConnectionString1 (Settings)" DbObjectName="BodegaFalcom.dbo.Solicitudes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+=======
+              <DbSource ConnectionRef="BodegaFalcomConnectionString (Settings)" DbObjectName="BodegaFalcom.dbo.Solicitudes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+>>>>>>> Feature_Colaboradores
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Solicitudes] WHERE (([codigoSolicitud] = @Original_codigoSolicitud) AND ([codigoCliente] = @Original_codigoCliente) AND ([codigoColaborador] = @Original_codigoColaborador) AND ([fechaSolicitud] = @Original_fechaSolicitud))</CommandText>
@@ -547,7 +611,11 @@ SELECT codigoSolicitud, codigoCliente, codigoColaborador, fechaSolicitud FROM So
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UsuariosTableAdapter" GeneratorDataComponentClassName="UsuariosTableAdapter" Name="Usuarios" UserDataComponentName="UsuariosTableAdapter">
             <MainSource>
+<<<<<<< HEAD
               <DbSource ConnectionRef="BodegaFalcomConnectionString1 (Settings)" DbObjectName="BodegaFalcom.dbo.Usuarios" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+=======
+              <DbSource ConnectionRef="BodegaFalcomConnectionString (Settings)" DbObjectName="BodegaFalcom.dbo.Usuarios" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+>>>>>>> Feature_Colaboradores
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Usuarios] WHERE (([CodigoUsuario] = @Original_CodigoUsuario) AND ([NombreUsuario] = @Original_NombreUsuario) AND ([ContraseñaUsuario] = @Original_ContraseñaUsuario) AND ([RolUsuario] = @Original_RolUsuario) AND ([EstadoUsuario] = @Original_EstadoUsuario))</CommandText>
@@ -607,12 +675,21 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             </Mappings>
             <Sources />
           </TableAdapter>
+<<<<<<< HEAD
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MostrarProductosTableAdapter" GeneratorDataComponentClassName="MostrarProductosTableAdapter" Name="MostrarProductos" UserDataComponentName="MostrarProductosTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="BodegaFalcomConnectionString1 (Settings)" DbObjectName="BodegaFalcom.dbo.MostrarProductos" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.MostrarProductos</CommandText>
+=======
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mostrarBitacoraInventarioTableAdapter" GeneratorDataComponentClassName="mostrarBitacoraInventarioTableAdapter" Name="mostrarBitacoraInventario" UserDataComponentName="mostrarBitacoraInventarioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BodegaFalcomConnectionString (Settings)" DbObjectName="BodegaFalcom.dbo.mostrarBitacoraInventario" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.mostrarBitacoraInventario</CommandText>
+>>>>>>> Feature_Colaboradores
                     <Parameters>
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
@@ -621,6 +698,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
               </DbSource>
             </MainSource>
             <Mappings>
+<<<<<<< HEAD
               <Mapping SourceColumn="Codigo_Producto" DataSetColumn="Codigo_Producto" />
               <Mapping SourceColumn="nombreproducto" DataSetColumn="nombreproducto" />
               <Mapping SourceColumn="cantidad" DataSetColumn="cantidad" />
@@ -636,6 +714,26 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.MostrarProductos2</CommandText>
+=======
+              <Mapping SourceColumn="Código bitácora" DataSetColumn="Código bitácora" />
+              <Mapping SourceColumn="Código inventario" DataSetColumn="Código inventario" />
+              <Mapping SourceColumn="Código solicitud" DataSetColumn="Código solicitud" />
+              <Mapping SourceColumn="Código Cliente" DataSetColumn="Código Cliente" />
+              <Mapping SourceColumn="Cliente" DataSetColumn="Cliente" />
+              <Mapping SourceColumn="Código colaborador" DataSetColumn="Código colaborador" />
+              <Mapping SourceColumn="Colaborador" DataSetColumn="Colaborador" />
+              <Mapping SourceColumn="Descripción" DataSetColumn="Descripción" />
+              <Mapping SourceColumn="Fecha registro" DataSetColumn="Fecha registro" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="mostrarColaboradoresTableAdapter" GeneratorDataComponentClassName="mostrarColaboradoresTableAdapter" Name="mostrarColaboradores" UserDataComponentName="mostrarColaboradoresTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BodegaFalcomConnectionString (Settings)" DbObjectName="BodegaFalcom.dbo.mostrarColaboradores" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.mostrarColaboradores</CommandText>
+>>>>>>> Feature_Colaboradores
                     <Parameters>
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
@@ -644,12 +742,25 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
               </DbSource>
             </MainSource>
             <Mappings>
+<<<<<<< HEAD
               <Mapping SourceColumn="Codigo_Producto" DataSetColumn="Codigo_Producto" />
               <Mapping SourceColumn="nombreproducto" DataSetColumn="nombreproducto" />
               <Mapping SourceColumn="cantidad" DataSetColumn="cantidad" />
               <Mapping SourceColumn="fechaIngreso" DataSetColumn="fechaIngreso" />
               <Mapping SourceColumn="fechaCaducidad" DataSetColumn="fechaCaducidad" />
               <Mapping SourceColumn="Caducidad_endias" DataSetColumn="Caducidad_endias" />
+=======
+              <Mapping SourceColumn="Código Colaborador" DataSetColumn="Código Colaborador" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="Identidad" DataSetColumn="Identidad" />
+              <Mapping SourceColumn="Departamento" DataSetColumn="Departamento" />
+              <Mapping SourceColumn="Edad" DataSetColumn="Edad" />
+              <Mapping SourceColumn="Correo Electronico" DataSetColumn="Correo Electronico" />
+              <Mapping SourceColumn="Salario" DataSetColumn="Salario" />
+              <Mapping SourceColumn="Teléfono" DataSetColumn="Teléfono" />
+              <Mapping SourceColumn="Estado Civil" DataSetColumn="Estado Civil" />
+              <Mapping SourceColumn="Estado Empresarial" DataSetColumn="Estado Empresarial" />
+>>>>>>> Feature_Colaboradores
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -661,7 +772,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
   <xs:element name="BodegaFalcomDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BodegaFalcomDataSet" msprop:Generator_UserDSName="BodegaFalcomDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
+<<<<<<< HEAD
         <xs:element name="Bitacora" msprop:Generator_TableClassName="BitacoraDataTable" msprop:Generator_TableVarName="tableBitacora" msprop:Generator_TablePropName="Bitacora" msprop:Generator_RowDeletingName="BitacoraRowDeleting" msprop:Generator_RowChangingName="BitacoraRowChanging" msprop:Generator_RowEvHandlerName="BitacoraRowChangeEventHandler" msprop:Generator_RowDeletedName="BitacoraRowDeleted" msprop:Generator_UserTableName="Bitacora" msprop:Generator_RowChangedName="BitacoraRowChanged" msprop:Generator_RowEvArgName="BitacoraRowChangeEvent" msprop:Generator_RowClassName="BitacoraRow">
+=======
+        <xs:element name="Bitacora" msprop:Generator_TableClassName="BitacoraDataTable" msprop:Generator_TableVarName="tableBitacora" msprop:Generator_RowChangedName="BitacoraRowChanged" msprop:Generator_TablePropName="Bitacora" msprop:Generator_RowDeletingName="BitacoraRowDeleting" msprop:Generator_RowChangingName="BitacoraRowChanging" msprop:Generator_RowEvHandlerName="BitacoraRowChangeEventHandler" msprop:Generator_RowDeletedName="BitacoraRowDeleted" msprop:Generator_RowClassName="BitacoraRow" msprop:Generator_UserTableName="Bitacora" msprop:Generator_RowEvArgName="BitacoraRowChangeEvent">
+>>>>>>> Feature_Colaboradores
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CodigoBitacora" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCodigoBitacora" msprop:Generator_ColumnPropNameInRow="CodigoBitacora" msprop:Generator_ColumnPropNameInTable="CodigoBitacoraColumn" msprop:Generator_UserColumnName="CodigoBitacora" type="xs:int" />
@@ -680,7 +795,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+<<<<<<< HEAD
         <xs:element name="Clientes" msprop:Generator_TableClassName="ClientesDataTable" msprop:Generator_TableVarName="tableClientes" msprop:Generator_TablePropName="Clientes" msprop:Generator_RowDeletingName="ClientesRowDeleting" msprop:Generator_RowChangingName="ClientesRowChanging" msprop:Generator_RowEvHandlerName="ClientesRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientesRowDeleted" msprop:Generator_UserTableName="Clientes" msprop:Generator_RowChangedName="ClientesRowChanged" msprop:Generator_RowEvArgName="ClientesRowChangeEvent" msprop:Generator_RowClassName="ClientesRow">
+=======
+        <xs:element name="Clientes" msprop:Generator_TableClassName="ClientesDataTable" msprop:Generator_TableVarName="tableClientes" msprop:Generator_RowChangedName="ClientesRowChanged" msprop:Generator_TablePropName="Clientes" msprop:Generator_RowDeletingName="ClientesRowDeleting" msprop:Generator_RowChangingName="ClientesRowChanging" msprop:Generator_RowEvHandlerName="ClientesRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientesRowDeleted" msprop:Generator_RowClassName="ClientesRow" msprop:Generator_UserTableName="Clientes" msprop:Generator_RowEvArgName="ClientesRowChangeEvent">
+>>>>>>> Feature_Colaboradores
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CodigoCliente" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCodigoCliente" msprop:Generator_ColumnPropNameInRow="CodigoCliente" msprop:Generator_ColumnPropNameInTable="CodigoClienteColumn" msprop:Generator_UserColumnName="CodigoCliente" type="xs:int" />
@@ -708,7 +827,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+<<<<<<< HEAD
         <xs:element name="colaboradores" msprop:Generator_TableClassName="colaboradoresDataTable" msprop:Generator_TableVarName="tablecolaboradores" msprop:Generator_TablePropName="colaboradores" msprop:Generator_RowDeletingName="colaboradoresRowDeleting" msprop:Generator_RowChangingName="colaboradoresRowChanging" msprop:Generator_RowEvHandlerName="colaboradoresRowChangeEventHandler" msprop:Generator_RowDeletedName="colaboradoresRowDeleted" msprop:Generator_UserTableName="colaboradores" msprop:Generator_RowChangedName="colaboradoresRowChanged" msprop:Generator_RowEvArgName="colaboradoresRowChangeEvent" msprop:Generator_RowClassName="colaboradoresRow">
+=======
+        <xs:element name="colaboradores" msprop:Generator_TableClassName="colaboradoresDataTable" msprop:Generator_TableVarName="tablecolaboradores" msprop:Generator_RowChangedName="colaboradoresRowChanged" msprop:Generator_TablePropName="colaboradores" msprop:Generator_RowDeletingName="colaboradoresRowDeleting" msprop:Generator_RowChangingName="colaboradoresRowChanging" msprop:Generator_RowEvHandlerName="colaboradoresRowChangeEventHandler" msprop:Generator_RowDeletedName="colaboradoresRowDeleted" msprop:Generator_RowClassName="colaboradoresRow" msprop:Generator_UserTableName="colaboradores" msprop:Generator_RowEvArgName="colaboradoresRowChangeEvent">
+>>>>>>> Feature_Colaboradores
           <xs:complexType>
             <xs:sequence>
               <xs:element name="codigoColaborador" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodigoColaborador" msprop:Generator_ColumnPropNameInRow="codigoColaborador" msprop:Generator_ColumnPropNameInTable="codigoColaboradorColumn" msprop:Generator_UserColumnName="codigoColaborador" type="xs:int" />
@@ -762,7 +885,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+<<<<<<< HEAD
         <xs:element name="departamentos" msprop:Generator_TableClassName="departamentosDataTable" msprop:Generator_TableVarName="tabledepartamentos" msprop:Generator_TablePropName="departamentos" msprop:Generator_RowDeletingName="departamentosRowDeleting" msprop:Generator_RowChangingName="departamentosRowChanging" msprop:Generator_RowEvHandlerName="departamentosRowChangeEventHandler" msprop:Generator_RowDeletedName="departamentosRowDeleted" msprop:Generator_UserTableName="departamentos" msprop:Generator_RowChangedName="departamentosRowChanged" msprop:Generator_RowEvArgName="departamentosRowChangeEvent" msprop:Generator_RowClassName="departamentosRow">
+=======
+        <xs:element name="departamentos" msprop:Generator_TableClassName="departamentosDataTable" msprop:Generator_TableVarName="tabledepartamentos" msprop:Generator_RowChangedName="departamentosRowChanged" msprop:Generator_TablePropName="departamentos" msprop:Generator_RowDeletingName="departamentosRowDeleting" msprop:Generator_RowChangingName="departamentosRowChanging" msprop:Generator_RowEvHandlerName="departamentosRowChangeEventHandler" msprop:Generator_RowDeletedName="departamentosRowDeleted" msprop:Generator_RowClassName="departamentosRow" msprop:Generator_UserTableName="departamentos" msprop:Generator_RowEvArgName="departamentosRowChangeEvent">
+>>>>>>> Feature_Colaboradores
           <xs:complexType>
             <xs:sequence>
               <xs:element name="codigoDepartamento" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodigoDepartamento" msprop:Generator_ColumnPropNameInRow="codigoDepartamento" msprop:Generator_ColumnPropNameInTable="codigoDepartamentoColumn" msprop:Generator_UserColumnName="codigoDepartamento" type="xs:int" />
@@ -776,7 +903,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+<<<<<<< HEAD
         <xs:element name="DetalleSolicitud" msprop:Generator_TableClassName="DetalleSolicitudDataTable" msprop:Generator_TableVarName="tableDetalleSolicitud" msprop:Generator_TablePropName="DetalleSolicitud" msprop:Generator_RowDeletingName="DetalleSolicitudRowDeleting" msprop:Generator_RowChangingName="DetalleSolicitudRowChanging" msprop:Generator_RowEvHandlerName="DetalleSolicitudRowChangeEventHandler" msprop:Generator_RowDeletedName="DetalleSolicitudRowDeleted" msprop:Generator_UserTableName="DetalleSolicitud" msprop:Generator_RowChangedName="DetalleSolicitudRowChanged" msprop:Generator_RowEvArgName="DetalleSolicitudRowChangeEvent" msprop:Generator_RowClassName="DetalleSolicitudRow">
+=======
+        <xs:element name="DetalleSolicitud" msprop:Generator_TableClassName="DetalleSolicitudDataTable" msprop:Generator_TableVarName="tableDetalleSolicitud" msprop:Generator_RowChangedName="DetalleSolicitudRowChanged" msprop:Generator_TablePropName="DetalleSolicitud" msprop:Generator_RowDeletingName="DetalleSolicitudRowDeleting" msprop:Generator_RowChangingName="DetalleSolicitudRowChanging" msprop:Generator_RowEvHandlerName="DetalleSolicitudRowChangeEventHandler" msprop:Generator_RowDeletedName="DetalleSolicitudRowDeleted" msprop:Generator_RowClassName="DetalleSolicitudRow" msprop:Generator_UserTableName="DetalleSolicitud" msprop:Generator_RowEvArgName="DetalleSolicitudRowChangeEvent">
+>>>>>>> Feature_Colaboradores
           <xs:complexType>
             <xs:sequence>
               <xs:element name="codigoDetalleSolicitud" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodigoDetalleSolicitud" msprop:Generator_ColumnPropNameInRow="codigoDetalleSolicitud" msprop:Generator_ColumnPropNameInTable="codigoDetalleSolicitudColumn" msprop:Generator_UserColumnName="codigoDetalleSolicitud" type="xs:int" />
@@ -786,7 +917,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+<<<<<<< HEAD
         <xs:element name="Inventario" msprop:Generator_TableClassName="InventarioDataTable" msprop:Generator_TableVarName="tableInventario" msprop:Generator_TablePropName="Inventario" msprop:Generator_RowDeletingName="InventarioRowDeleting" msprop:Generator_RowChangingName="InventarioRowChanging" msprop:Generator_RowEvHandlerName="InventarioRowChangeEventHandler" msprop:Generator_RowDeletedName="InventarioRowDeleted" msprop:Generator_UserTableName="Inventario" msprop:Generator_RowChangedName="InventarioRowChanged" msprop:Generator_RowEvArgName="InventarioRowChangeEvent" msprop:Generator_RowClassName="InventarioRow">
+=======
+        <xs:element name="Inventario" msprop:Generator_TableClassName="InventarioDataTable" msprop:Generator_TableVarName="tableInventario" msprop:Generator_RowChangedName="InventarioRowChanged" msprop:Generator_TablePropName="Inventario" msprop:Generator_RowDeletingName="InventarioRowDeleting" msprop:Generator_RowChangingName="InventarioRowChanging" msprop:Generator_RowEvHandlerName="InventarioRowChangeEventHandler" msprop:Generator_RowDeletedName="InventarioRowDeleted" msprop:Generator_RowClassName="InventarioRow" msprop:Generator_UserTableName="Inventario" msprop:Generator_RowEvArgName="InventarioRowChangeEvent">
+>>>>>>> Feature_Colaboradores
           <xs:complexType>
             <xs:sequence>
               <xs:element name="codigoInventario" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodigoInventario" msprop:Generator_ColumnPropNameInRow="codigoInventario" msprop:Generator_ColumnPropNameInTable="codigoInventarioColumn" msprop:Generator_UserColumnName="codigoInventario" type="xs:int" />
@@ -798,7 +933,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+<<<<<<< HEAD
         <xs:element name="Producto" msprop:Generator_TableClassName="ProductoDataTable" msprop:Generator_TableVarName="tableProducto" msprop:Generator_TablePropName="Producto" msprop:Generator_RowDeletingName="ProductoRowDeleting" msprop:Generator_RowChangingName="ProductoRowChanging" msprop:Generator_RowEvHandlerName="ProductoRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductoRowDeleted" msprop:Generator_UserTableName="Producto" msprop:Generator_RowChangedName="ProductoRowChanged" msprop:Generator_RowEvArgName="ProductoRowChangeEvent" msprop:Generator_RowClassName="ProductoRow">
+=======
+        <xs:element name="Producto" msprop:Generator_TableClassName="ProductoDataTable" msprop:Generator_TableVarName="tableProducto" msprop:Generator_RowChangedName="ProductoRowChanged" msprop:Generator_TablePropName="Producto" msprop:Generator_RowDeletingName="ProductoRowDeleting" msprop:Generator_RowChangingName="ProductoRowChanging" msprop:Generator_RowEvHandlerName="ProductoRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductoRowDeleted" msprop:Generator_RowClassName="ProductoRow" msprop:Generator_UserTableName="Producto" msprop:Generator_RowEvArgName="ProductoRowChangeEvent">
+>>>>>>> Feature_Colaboradores
           <xs:complexType>
             <xs:sequence>
               <xs:element name="codigoProducto" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodigoProducto" msprop:Generator_ColumnPropNameInRow="codigoProducto" msprop:Generator_ColumnPropNameInTable="codigoProductoColumn" msprop:Generator_UserColumnName="codigoProducto" type="xs:int" />
@@ -821,7 +960,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+<<<<<<< HEAD
         <xs:element name="Solicitudes" msprop:Generator_TableClassName="SolicitudesDataTable" msprop:Generator_TableVarName="tableSolicitudes" msprop:Generator_TablePropName="Solicitudes" msprop:Generator_RowDeletingName="SolicitudesRowDeleting" msprop:Generator_RowChangingName="SolicitudesRowChanging" msprop:Generator_RowEvHandlerName="SolicitudesRowChangeEventHandler" msprop:Generator_RowDeletedName="SolicitudesRowDeleted" msprop:Generator_UserTableName="Solicitudes" msprop:Generator_RowChangedName="SolicitudesRowChanged" msprop:Generator_RowEvArgName="SolicitudesRowChangeEvent" msprop:Generator_RowClassName="SolicitudesRow">
+=======
+        <xs:element name="Solicitudes" msprop:Generator_TableClassName="SolicitudesDataTable" msprop:Generator_TableVarName="tableSolicitudes" msprop:Generator_RowChangedName="SolicitudesRowChanged" msprop:Generator_TablePropName="Solicitudes" msprop:Generator_RowDeletingName="SolicitudesRowDeleting" msprop:Generator_RowChangingName="SolicitudesRowChanging" msprop:Generator_RowEvHandlerName="SolicitudesRowChangeEventHandler" msprop:Generator_RowDeletedName="SolicitudesRowDeleted" msprop:Generator_RowClassName="SolicitudesRow" msprop:Generator_UserTableName="Solicitudes" msprop:Generator_RowEvArgName="SolicitudesRowChangeEvent">
+>>>>>>> Feature_Colaboradores
           <xs:complexType>
             <xs:sequence>
               <xs:element name="codigoSolicitud" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncodigoSolicitud" msprop:Generator_ColumnPropNameInRow="codigoSolicitud" msprop:Generator_ColumnPropNameInTable="codigoSolicitudColumn" msprop:Generator_UserColumnName="codigoSolicitud" type="xs:int" />
@@ -831,7 +974,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+<<<<<<< HEAD
         <xs:element name="Usuarios" msprop:Generator_TableClassName="UsuariosDataTable" msprop:Generator_TableVarName="tableUsuarios" msprop:Generator_TablePropName="Usuarios" msprop:Generator_RowDeletingName="UsuariosRowDeleting" msprop:Generator_RowChangingName="UsuariosRowChanging" msprop:Generator_RowEvHandlerName="UsuariosRowChangeEventHandler" msprop:Generator_RowDeletedName="UsuariosRowDeleted" msprop:Generator_UserTableName="Usuarios" msprop:Generator_RowChangedName="UsuariosRowChanged" msprop:Generator_RowEvArgName="UsuariosRowChangeEvent" msprop:Generator_RowClassName="UsuariosRow">
+=======
+        <xs:element name="Usuarios" msprop:Generator_TableClassName="UsuariosDataTable" msprop:Generator_TableVarName="tableUsuarios" msprop:Generator_RowChangedName="UsuariosRowChanged" msprop:Generator_TablePropName="Usuarios" msprop:Generator_RowDeletingName="UsuariosRowDeleting" msprop:Generator_RowChangingName="UsuariosRowChanging" msprop:Generator_RowEvHandlerName="UsuariosRowChangeEventHandler" msprop:Generator_RowDeletedName="UsuariosRowDeleted" msprop:Generator_RowClassName="UsuariosRow" msprop:Generator_UserTableName="Usuarios" msprop:Generator_RowEvArgName="UsuariosRowChangeEvent">
+>>>>>>> Feature_Colaboradores
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CodigoUsuario" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCodigoUsuario" msprop:Generator_ColumnPropNameInRow="CodigoUsuario" msprop:Generator_ColumnPropNameInTable="CodigoUsuarioColumn" msprop:Generator_UserColumnName="CodigoUsuario" type="xs:int" />
@@ -860,17 +1007,37 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+<<<<<<< HEAD
         <xs:element name="MostrarProductos" msprop:Generator_TableClassName="MostrarProductosDataTable" msprop:Generator_TableVarName="tableMostrarProductos" msprop:Generator_TablePropName="MostrarProductos" msprop:Generator_RowDeletingName="MostrarProductosRowDeleting" msprop:Generator_RowChangingName="MostrarProductosRowChanging" msprop:Generator_RowEvHandlerName="MostrarProductosRowChangeEventHandler" msprop:Generator_RowDeletedName="MostrarProductosRowDeleted" msprop:Generator_UserTableName="MostrarProductos" msprop:Generator_RowChangedName="MostrarProductosRowChanged" msprop:Generator_RowEvArgName="MostrarProductosRowChangeEvent" msprop:Generator_RowClassName="MostrarProductosRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Codigo_Producto" msprop:Generator_ColumnVarNameInTable="columnCodigo_Producto" msprop:Generator_ColumnPropNameInRow="Codigo_Producto" msprop:Generator_ColumnPropNameInTable="Codigo_ProductoColumn" msprop:Generator_UserColumnName="Codigo_Producto" type="xs:int" minOccurs="0" />
               <xs:element name="nombreproducto" msprop:Generator_ColumnVarNameInTable="columnnombreproducto" msprop:Generator_ColumnPropNameInRow="nombreproducto" msprop:Generator_ColumnPropNameInTable="nombreproductoColumn" msprop:Generator_UserColumnName="nombreproducto" minOccurs="0">
+=======
+        <xs:element name="mostrarBitacoraInventario" msprop:Generator_TableClassName="mostrarBitacoraInventarioDataTable" msprop:Generator_TableVarName="tablemostrarBitacoraInventario" msprop:Generator_RowChangedName="mostrarBitacoraInventarioRowChanged" msprop:Generator_TablePropName="mostrarBitacoraInventario" msprop:Generator_RowDeletingName="mostrarBitacoraInventarioRowDeleting" msprop:Generator_RowChangingName="mostrarBitacoraInventarioRowChanging" msprop:Generator_RowEvHandlerName="mostrarBitacoraInventarioRowChangeEventHandler" msprop:Generator_RowDeletedName="mostrarBitacoraInventarioRowDeleted" msprop:Generator_RowClassName="mostrarBitacoraInventarioRow" msprop:Generator_UserTableName="mostrarBitacoraInventario" msprop:Generator_RowEvArgName="mostrarBitacoraInventarioRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Código_x0020_bitácora" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnCódigo_bitácora" msprop:Generator_ColumnPropNameInRow="Código_bitácora" msprop:Generator_ColumnPropNameInTable="Código_bitácoraColumn" msprop:Generator_UserColumnName="Código bitácora" type="xs:int" />
+              <xs:element name="Código_x0020_inventario" msprop:Generator_ColumnVarNameInTable="columnCódigo_inventario" msprop:Generator_ColumnPropNameInRow="Código_inventario" msprop:Generator_ColumnPropNameInTable="Código_inventarioColumn" msprop:Generator_UserColumnName="Código inventario" type="xs:int" />
+              <xs:element name="Código_x0020_solicitud" msprop:Generator_ColumnVarNameInTable="columnCódigo_solicitud" msprop:Generator_ColumnPropNameInRow="Código_solicitud" msprop:Generator_ColumnPropNameInTable="Código_solicitudColumn" msprop:Generator_UserColumnName="Código solicitud" type="xs:int" />
+              <xs:element name="Código_x0020_Cliente" msprop:Generator_ColumnVarNameInTable="columnCódigo_Cliente" msprop:Generator_ColumnPropNameInRow="Código_Cliente" msprop:Generator_ColumnPropNameInTable="Código_ClienteColumn" msprop:Generator_UserColumnName="Código Cliente" type="xs:int" />
+              <xs:element name="Cliente" msprop:Generator_ColumnVarNameInTable="columnCliente" msprop:Generator_ColumnPropNameInRow="Cliente" msprop:Generator_ColumnPropNameInTable="ClienteColumn" msprop:Generator_UserColumnName="Cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Código_x0020_colaborador" msprop:Generator_ColumnVarNameInTable="columnCódigo_colaborador" msprop:Generator_ColumnPropNameInRow="Código_colaborador" msprop:Generator_ColumnPropNameInTable="Código_colaboradorColumn" msprop:Generator_UserColumnName="Código colaborador" type="xs:int" />
+              <xs:element name="Colaborador" msprop:Generator_ColumnVarNameInTable="columnColaborador" msprop:Generator_ColumnPropNameInRow="Colaborador" msprop:Generator_ColumnPropNameInTable="ColaboradorColumn" msprop:Generator_UserColumnName="Colaborador">
+>>>>>>> Feature_Colaboradores
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+<<<<<<< HEAD
               <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:decimal" minOccurs="0" />
               <xs:element name="fechaIngreso" msprop:Generator_ColumnVarNameInTable="columnfechaIngreso" msprop:Generator_ColumnPropNameInRow="fechaIngreso" msprop:Generator_ColumnPropNameInTable="fechaIngresoColumn" msprop:Generator_UserColumnName="fechaIngreso" type="xs:dateTime" minOccurs="0" />
               <xs:element name="fechaCaducidad" msprop:Generator_ColumnVarNameInTable="columnfechaCaducidad" msprop:Generator_ColumnPropNameInRow="fechaCaducidad" msprop:Generator_ColumnPropNameInTable="fechaCaducidadColumn" msprop:Generator_UserColumnName="fechaCaducidad" type="xs:dateTime" minOccurs="0" />
@@ -883,16 +1050,81 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             <xs:sequence>
               <xs:element name="Codigo_Producto" msprop:Generator_ColumnVarNameInTable="columnCodigo_Producto" msprop:Generator_ColumnPropNameInRow="Codigo_Producto" msprop:Generator_ColumnPropNameInTable="Codigo_ProductoColumn" msprop:Generator_UserColumnName="Codigo_Producto" type="xs:int" minOccurs="0" />
               <xs:element name="nombreproducto" msprop:Generator_ColumnVarNameInTable="columnnombreproducto" msprop:Generator_ColumnPropNameInRow="nombreproducto" msprop:Generator_ColumnPropNameInTable="nombreproductoColumn" msprop:Generator_UserColumnName="nombreproducto" minOccurs="0">
+=======
+              <xs:element name="Descripción" msprop:Generator_ColumnVarNameInTable="columnDescripción" msprop:Generator_ColumnPropNameInRow="Descripción" msprop:Generator_ColumnPropNameInTable="DescripciónColumn" msprop:Generator_UserColumnName="Descripción">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha_x0020_registro" msprop:Generator_ColumnVarNameInTable="columnFecha_registro" msprop:Generator_ColumnPropNameInRow="Fecha_registro" msprop:Generator_ColumnPropNameInTable="Fecha_registroColumn" msprop:Generator_UserColumnName="Fecha registro" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mostrarColaboradores" msprop:Generator_TableClassName="mostrarColaboradoresDataTable" msprop:Generator_TableVarName="tablemostrarColaboradores" msprop:Generator_TablePropName="mostrarColaboradores" msprop:Generator_RowDeletingName="mostrarColaboradoresRowDeleting" msprop:Generator_RowChangingName="mostrarColaboradoresRowChanging" msprop:Generator_RowEvHandlerName="mostrarColaboradoresRowChangeEventHandler" msprop:Generator_RowDeletedName="mostrarColaboradoresRowDeleted" msprop:Generator_UserTableName="mostrarColaboradores" msprop:Generator_RowChangedName="mostrarColaboradoresRowChanged" msprop:Generator_RowEvArgName="mostrarColaboradoresRowChangeEvent" msprop:Generator_RowClassName="mostrarColaboradoresRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Código_x0020_Colaborador" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnCódigo_Colaborador" msprop:Generator_ColumnPropNameInRow="Código_Colaborador" msprop:Generator_ColumnPropNameInTable="Código_ColaboradorColumn" msprop:Generator_UserColumnName="Código Colaborador" type="xs:int" />
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="Identidad" msprop:Generator_ColumnVarNameInTable="columnIdentidad" msprop:Generator_ColumnPropNameInRow="Identidad" msprop:Generator_ColumnPropNameInTable="IdentidadColumn" msprop:Generator_UserColumnName="Identidad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Departamento" msprop:Generator_ColumnVarNameInTable="columnDepartamento" msprop:Generator_ColumnPropNameInRow="Departamento" msprop:Generator_ColumnPropNameInTable="DepartamentoColumn" msprop:Generator_UserColumnName="Departamento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Edad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEdad" msprop:Generator_ColumnPropNameInRow="Edad" msprop:Generator_ColumnPropNameInTable="EdadColumn" msprop:Generator_UserColumnName="Edad" type="xs:int" minOccurs="0" />
+              <xs:element name="Correo_x0020_Electronico" msprop:Generator_ColumnVarNameInTable="columnCorreo_Electronico" msprop:Generator_ColumnPropNameInRow="Correo_Electronico" msprop:Generator_ColumnPropNameInTable="Correo_ElectronicoColumn" msprop:Generator_UserColumnName="Correo Electronico" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Salario" msprop:Generator_ColumnVarNameInTable="columnSalario" msprop:Generator_ColumnPropNameInRow="Salario" msprop:Generator_ColumnPropNameInTable="SalarioColumn" msprop:Generator_UserColumnName="Salario" type="xs:decimal" />
+              <xs:element name="Teléfono" msprop:Generator_ColumnVarNameInTable="columnTeléfono" msprop:Generator_ColumnPropNameInRow="Teléfono" msprop:Generator_ColumnPropNameInTable="TeléfonoColumn" msprop:Generator_UserColumnName="Teléfono">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado_x0020_Civil" msprop:Generator_ColumnVarNameInTable="columnEstado_Civil" msprop:Generator_ColumnPropNameInRow="Estado_Civil" msprop:Generator_ColumnPropNameInTable="Estado_CivilColumn" msprop:Generator_UserColumnName="Estado Civil">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado_x0020_Empresarial" msprop:Generator_ColumnVarNameInTable="columnEstado_Empresarial" msprop:Generator_ColumnPropNameInRow="Estado_Empresarial" msprop:Generator_ColumnPropNameInTable="Estado_EmpresarialColumn" msprop:Generator_UserColumnName="Estado Empresarial">
+>>>>>>> Feature_Colaboradores
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+<<<<<<< HEAD
               <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:decimal" minOccurs="0" />
               <xs:element name="fechaIngreso" msprop:Generator_ColumnVarNameInTable="columnfechaIngreso" msprop:Generator_ColumnPropNameInRow="fechaIngreso" msprop:Generator_ColumnPropNameInTable="fechaIngresoColumn" msprop:Generator_UserColumnName="fechaIngreso" type="xs:dateTime" minOccurs="0" />
               <xs:element name="fechaCaducidad" msprop:Generator_ColumnVarNameInTable="columnfechaCaducidad" msprop:Generator_ColumnPropNameInRow="fechaCaducidad" msprop:Generator_ColumnPropNameInTable="fechaCaducidadColumn" msprop:Generator_UserColumnName="fechaCaducidad" type="xs:dateTime" minOccurs="0" />
               <xs:element name="Caducidad_endias" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCaducidad_endias" msprop:Generator_ColumnPropNameInRow="Caducidad_endias" msprop:Generator_ColumnPropNameInTable="Caducidad_endiasColumn" msprop:Generator_UserColumnName="Caducidad_endias" type="xs:int" minOccurs="0" />
+=======
+>>>>>>> Feature_Colaboradores
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -934,6 +1166,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
       <xs:selector xpath=".//mstns:Usuarios" />
       <xs:field xpath="mstns:CodigoUsuario" />
     </xs:unique>
+<<<<<<< HEAD
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
@@ -947,6 +1180,29 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
       <msdata:Relationship name="FK_Inventario_Producto" msdata:parent="Producto" msdata:child="Inventario" msdata:parentkey="codigoProducto" msdata:childkey="codigoProducto" msprop:Generator_UserChildTable="Inventario" msprop:Generator_ChildPropName="GetInventarioRows" msprop:Generator_UserRelationName="FK_Inventario_Producto" msprop:Generator_RelationVarName="relationFK_Inventario_Producto" msprop:Generator_UserParentTable="Producto" msprop:Generator_ParentPropName="ProductoRow" />
       <msdata:Relationship name="FK_Solicitudes_Clientes" msdata:parent="Clientes" msdata:child="Solicitudes" msdata:parentkey="CodigoCliente" msdata:childkey="codigoCliente" msprop:Generator_UserChildTable="Solicitudes" msprop:Generator_ChildPropName="GetSolicitudesRows" msprop:Generator_UserRelationName="FK_Solicitudes_Clientes" msprop:Generator_ParentPropName="ClientesRow" msprop:Generator_RelationVarName="relationFK_Solicitudes_Clientes" msprop:Generator_UserParentTable="Clientes" />
       <msdata:Relationship name="FK_Solicitudes_colaboradores" msdata:parent="colaboradores" msdata:child="Solicitudes" msdata:parentkey="codigoColaborador" msdata:childkey="codigoColaborador" msprop:Generator_UserChildTable="Solicitudes" msprop:Generator_ChildPropName="GetSolicitudesRows" msprop:Generator_UserRelationName="FK_Solicitudes_colaboradores" msprop:Generator_ParentPropName="colaboradoresRow" msprop:Generator_RelationVarName="relationFK_Solicitudes_colaboradores" msprop:Generator_UserParentTable="colaboradores" />
+=======
+    <xs:unique name="mostrarBitacoraInventario_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mostrarBitacoraInventario" />
+      <xs:field xpath="mstns:Código_x0020_bitácora" />
+    </xs:unique>
+    <xs:unique name="mostrarColaboradores_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:mostrarColaboradores" />
+      <xs:field xpath="mstns:Código_x0020_Colaborador" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Bitacora_Clientes" msdata:parent="Clientes" msdata:child="Bitacora" msdata:parentkey="CodigoCliente" msdata:childkey="CodigoCliente" msprop:Generator_UserChildTable="Bitacora" msprop:Generator_ChildPropName="GetBitacoraRows" msprop:Generator_UserRelationName="FK_Bitacora_Clientes" msprop:Generator_ParentPropName="ClientesRow" msprop:Generator_RelationVarName="relationFK_Bitacora_Clientes" msprop:Generator_UserParentTable="Clientes" />
+      <msdata:Relationship name="FK_Bitacora_colaboradores" msdata:parent="colaboradores" msdata:child="Bitacora" msdata:parentkey="codigoColaborador" msdata:childkey="CodigoColaborador" msprop:Generator_UserChildTable="Bitacora" msprop:Generator_ChildPropName="GetBitacoraRows" msprop:Generator_UserRelationName="FK_Bitacora_colaboradores" msprop:Generator_ParentPropName="colaboradoresRow" msprop:Generator_RelationVarName="relationFK_Bitacora_colaboradores" msprop:Generator_UserParentTable="colaboradores" />
+      <msdata:Relationship name="FK_Bitacora_Inventario" msdata:parent="Inventario" msdata:child="Bitacora" msdata:parentkey="codigoInventario" msdata:childkey="CodigoInventario" msprop:Generator_UserChildTable="Bitacora" msprop:Generator_ChildPropName="GetBitacoraRows" msprop:Generator_UserRelationName="FK_Bitacora_Inventario" msprop:Generator_ParentPropName="InventarioRow" msprop:Generator_RelationVarName="relationFK_Bitacora_Inventario" msprop:Generator_UserParentTable="Inventario" />
+      <msdata:Relationship name="FK_Bitacora_Solicitudes" msdata:parent="Solicitudes" msdata:child="Bitacora" msdata:parentkey="codigoSolicitud" msdata:childkey="CodigoSolicitud" msprop:Generator_UserChildTable="Bitacora" msprop:Generator_ChildPropName="GetBitacoraRows" msprop:Generator_UserRelationName="FK_Bitacora_Solicitudes" msprop:Generator_ParentPropName="SolicitudesRow" msprop:Generator_RelationVarName="relationFK_Bitacora_Solicitudes" msprop:Generator_UserParentTable="Solicitudes" />
+      <msdata:Relationship name="FK_colaboradores_departamentos" msdata:parent="departamentos" msdata:child="colaboradores" msdata:parentkey="codigoDepartamento" msdata:childkey="codigoDepartameto" msprop:Generator_UserChildTable="colaboradores" msprop:Generator_ChildPropName="GetcolaboradoresRows" msprop:Generator_UserRelationName="FK_colaboradores_departamentos" msprop:Generator_ParentPropName="departamentosRow" msprop:Generator_RelationVarName="relationFK_colaboradores_departamentos" msprop:Generator_UserParentTable="departamentos" />
+      <msdata:Relationship name="FK_DetalleSolicitud_Inventario1" msdata:parent="Inventario" msdata:child="DetalleSolicitud" msdata:parentkey="codigoInventario" msdata:childkey="codigoInventario" msprop:Generator_UserChildTable="DetalleSolicitud" msprop:Generator_ChildPropName="GetDetalleSolicitudRows" msprop:Generator_UserRelationName="FK_DetalleSolicitud_Inventario1" msprop:Generator_ParentPropName="InventarioRow" msprop:Generator_RelationVarName="relationFK_DetalleSolicitud_Inventario1" msprop:Generator_UserParentTable="Inventario" />
+      <msdata:Relationship name="FK_DetalleSolicitud_Solicitudes" msdata:parent="Solicitudes" msdata:child="DetalleSolicitud" msdata:parentkey="codigoSolicitud" msdata:childkey="codigoSolicitud" msprop:Generator_UserChildTable="DetalleSolicitud" msprop:Generator_ChildPropName="GetDetalleSolicitudRows" msprop:Generator_UserRelationName="FK_DetalleSolicitud_Solicitudes" msprop:Generator_ParentPropName="SolicitudesRow" msprop:Generator_RelationVarName="relationFK_DetalleSolicitud_Solicitudes" msprop:Generator_UserParentTable="Solicitudes" />
+      <msdata:Relationship name="FK_Inventario_Producto" msdata:parent="Producto" msdata:child="Inventario" msdata:parentkey="codigoProducto" msdata:childkey="codigoProducto" msprop:Generator_UserChildTable="Inventario" msprop:Generator_ChildPropName="GetInventarioRows" msprop:Generator_UserRelationName="FK_Inventario_Producto" msprop:Generator_ParentPropName="ProductoRow" msprop:Generator_RelationVarName="relationFK_Inventario_Producto" msprop:Generator_UserParentTable="Producto" />
+      <msdata:Relationship name="FK_Solicitudes_Clientes" msdata:parent="Clientes" msdata:child="Solicitudes" msdata:parentkey="CodigoCliente" msdata:childkey="codigoCliente" msprop:Generator_UserChildTable="Solicitudes" msprop:Generator_ChildPropName="GetSolicitudesRows" msprop:Generator_UserRelationName="FK_Solicitudes_Clientes" msprop:Generator_RelationVarName="relationFK_Solicitudes_Clientes" msprop:Generator_UserParentTable="Clientes" msprop:Generator_ParentPropName="ClientesRow" />
+      <msdata:Relationship name="FK_Solicitudes_colaboradores" msdata:parent="colaboradores" msdata:child="Solicitudes" msdata:parentkey="codigoColaborador" msdata:childkey="codigoColaborador" msprop:Generator_UserChildTable="Solicitudes" msprop:Generator_ChildPropName="GetSolicitudesRows" msprop:Generator_UserRelationName="FK_Solicitudes_colaboradores" msprop:Generator_RelationVarName="relationFK_Solicitudes_colaboradores" msprop:Generator_UserParentTable="colaboradores" msprop:Generator_ParentPropName="colaboradoresRow" />
+>>>>>>> Feature_Colaboradores
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

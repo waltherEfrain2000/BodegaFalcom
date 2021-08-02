@@ -10,8 +10,32 @@ using System.Windows.Forms;
 
 namespace Proyecto_Falcom_Bodega
 {
+<<<<<<< HEAD
    class Conexion
     {
+=======
+    class Conexion
+    {
+        public static List<departamentos> CargarDatos()
+        {
+            var lista = new List<departamentos>();
+            using (var con = new SqlConnection("Data Source=(local)\\SQLEXPRESS;Initial Catalog=BodegaFalcom;Integrated Security=True"))
+            {
+                con.Open();
+                const string consulta = "select codigoDepartamento, nombreDepartamento from departamentos";
+                var cmd = new SqlCommand(consulta, con);
+                SqlDataReader lector = cmd.ExecuteReader();
+                while (lector.Read())
+                {
+                    var entidad = new departamentos();
+                    entidad.codigoDepartamento = Convert.ToInt32(lector[0]);
+                    entidad.nombreDepartamento = Convert.ToString(lector[1]);
+                    lista.Add(entidad);
+                }
+                return lista;
+            }
+        }
+>>>>>>> Feature_Colaboradores
 
         public void Busquedas(string Comando, DataGridView grid, string columna)
         {
@@ -103,6 +127,7 @@ namespace Proyecto_Falcom_Bodega
         }
         public bool Modificaciones(string Comando)
         {
+<<<<<<< HEAD
             SqlConnection CnnSql = new SqlConnection("Data Source=(local)\\SQLEXPRESS;Initial Catalog=BodegaFalcom;Integrated Security=True");
             SqlCommand Cmd = new SqlCommand(Comando, CnnSql);
 
@@ -114,6 +139,32 @@ namespace Proyecto_Falcom_Bodega
 
             return true;
 
+=======
+            try
+            {
+                SqlConnection CnnSql = new SqlConnection("Data Source=(local)\\SQLEXPRESS;Initial Catalog=BodegaFalcom;Integrated Security=True");
+                SqlCommand Cmd = new SqlCommand(Comando, CnnSql);
+
+                CnnSql.Open();
+                Cmd.ExecuteNonQuery();
+
+                CnnSql.Dispose();
+                Cmd.Dispose();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error:" + e);
+            }
+
+            return true;
+            
+        }
+
+        public class departamentos
+        {
+            public int codigoDepartamento { get; set; }
+            public string nombreDepartamento { get; set; }
+>>>>>>> Feature_Colaboradores
         }
     }
 }

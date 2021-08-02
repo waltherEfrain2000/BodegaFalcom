@@ -42,9 +42,15 @@ namespace Proyecto_Falcom_Bodega {
         
         private UsuariosDataTable tableUsuarios;
         
+<<<<<<< HEAD
         private MostrarProductosDataTable tableMostrarProductos;
         
         private MostrarProductos2DataTable tableMostrarProductos2;
+=======
+        private mostrarBitacoraInventarioDataTable tablemostrarBitacoraInventario;
+        
+        private mostrarColaboradoresDataTable tablemostrarColaboradores;
+>>>>>>> Feature_Colaboradores
         
         private global::System.Data.DataRelation relationFK_Bitacora_Clientes;
         
@@ -121,11 +127,19 @@ namespace Proyecto_Falcom_Bodega {
                 if ((ds.Tables["Usuarios"] != null)) {
                     base.Tables.Add(new UsuariosDataTable(ds.Tables["Usuarios"]));
                 }
+<<<<<<< HEAD
                 if ((ds.Tables["MostrarProductos"] != null)) {
                     base.Tables.Add(new MostrarProductosDataTable(ds.Tables["MostrarProductos"]));
                 }
                 if ((ds.Tables["MostrarProductos2"] != null)) {
                     base.Tables.Add(new MostrarProductos2DataTable(ds.Tables["MostrarProductos2"]));
+=======
+                if ((ds.Tables["mostrarBitacoraInventario"] != null)) {
+                    base.Tables.Add(new mostrarBitacoraInventarioDataTable(ds.Tables["mostrarBitacoraInventario"]));
+                }
+                if ((ds.Tables["mostrarColaboradores"] != null)) {
+                    base.Tables.Add(new mostrarColaboradoresDataTable(ds.Tables["mostrarColaboradores"]));
+>>>>>>> Feature_Colaboradores
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -239,9 +253,15 @@ namespace Proyecto_Falcom_Bodega {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+<<<<<<< HEAD
         public MostrarProductosDataTable MostrarProductos {
             get {
                 return this.tableMostrarProductos;
+=======
+        public mostrarBitacoraInventarioDataTable mostrarBitacoraInventario {
+            get {
+                return this.tablemostrarBitacoraInventario;
+>>>>>>> Feature_Colaboradores
             }
         }
         
@@ -249,9 +269,15 @@ namespace Proyecto_Falcom_Bodega {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+<<<<<<< HEAD
         public MostrarProductos2DataTable MostrarProductos2 {
             get {
                 return this.tableMostrarProductos2;
+=======
+        public mostrarColaboradoresDataTable mostrarColaboradores {
+            get {
+                return this.tablemostrarColaboradores;
+>>>>>>> Feature_Colaboradores
             }
         }
         
@@ -349,11 +375,19 @@ namespace Proyecto_Falcom_Bodega {
                 if ((ds.Tables["Usuarios"] != null)) {
                     base.Tables.Add(new UsuariosDataTable(ds.Tables["Usuarios"]));
                 }
+<<<<<<< HEAD
                 if ((ds.Tables["MostrarProductos"] != null)) {
                     base.Tables.Add(new MostrarProductosDataTable(ds.Tables["MostrarProductos"]));
                 }
                 if ((ds.Tables["MostrarProductos2"] != null)) {
                     base.Tables.Add(new MostrarProductos2DataTable(ds.Tables["MostrarProductos2"]));
+=======
+                if ((ds.Tables["mostrarBitacoraInventario"] != null)) {
+                    base.Tables.Add(new mostrarBitacoraInventarioDataTable(ds.Tables["mostrarBitacoraInventario"]));
+                }
+                if ((ds.Tables["mostrarColaboradores"] != null)) {
+                    base.Tables.Add(new mostrarColaboradoresDataTable(ds.Tables["mostrarColaboradores"]));
+>>>>>>> Feature_Colaboradores
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -442,6 +476,7 @@ namespace Proyecto_Falcom_Bodega {
                     this.tableUsuarios.InitVars();
                 }
             }
+<<<<<<< HEAD
             this.tableMostrarProductos = ((MostrarProductosDataTable)(base.Tables["MostrarProductos"]));
             if ((initTable == true)) {
                 if ((this.tableMostrarProductos != null)) {
@@ -452,6 +487,18 @@ namespace Proyecto_Falcom_Bodega {
             if ((initTable == true)) {
                 if ((this.tableMostrarProductos2 != null)) {
                     this.tableMostrarProductos2.InitVars();
+=======
+            this.tablemostrarBitacoraInventario = ((mostrarBitacoraInventarioDataTable)(base.Tables["mostrarBitacoraInventario"]));
+            if ((initTable == true)) {
+                if ((this.tablemostrarBitacoraInventario != null)) {
+                    this.tablemostrarBitacoraInventario.InitVars();
+                }
+            }
+            this.tablemostrarColaboradores = ((mostrarColaboradoresDataTable)(base.Tables["mostrarColaboradores"]));
+            if ((initTable == true)) {
+                if ((this.tablemostrarColaboradores != null)) {
+                    this.tablemostrarColaboradores.InitVars();
+>>>>>>> Feature_Colaboradores
                 }
             }
             this.relationFK_Bitacora_Clientes = this.Relations["FK_Bitacora_Clientes"];
@@ -492,10 +539,17 @@ namespace Proyecto_Falcom_Bodega {
             base.Tables.Add(this.tableSolicitudes);
             this.tableUsuarios = new UsuariosDataTable();
             base.Tables.Add(this.tableUsuarios);
+<<<<<<< HEAD
             this.tableMostrarProductos = new MostrarProductosDataTable();
             base.Tables.Add(this.tableMostrarProductos);
             this.tableMostrarProductos2 = new MostrarProductos2DataTable();
             base.Tables.Add(this.tableMostrarProductos2);
+=======
+            this.tablemostrarBitacoraInventario = new mostrarBitacoraInventarioDataTable();
+            base.Tables.Add(this.tablemostrarBitacoraInventario);
+            this.tablemostrarColaboradores = new mostrarColaboradoresDataTable();
+            base.Tables.Add(this.tablemostrarColaboradores);
+>>>>>>> Feature_Colaboradores
             this.relationFK_Bitacora_Clientes = new global::System.Data.DataRelation("FK_Bitacora_Clientes", new global::System.Data.DataColumn[] {
                         this.tableClientes.CodigoClienteColumn}, new global::System.Data.DataColumn[] {
                         this.tableBitacora.CodigoClienteColumn}, false);
@@ -594,13 +648,21 @@ namespace Proyecto_Falcom_Bodega {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
         private bool ShouldSerializeMostrarProductos() {
+=======
+        private bool ShouldSerializemostrarBitacoraInventario() {
+>>>>>>> Feature_Colaboradores
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
         private bool ShouldSerializeMostrarProductos2() {
+=======
+        private bool ShouldSerializemostrarColaboradores() {
+>>>>>>> Feature_Colaboradores
             return false;
         }
         
@@ -687,10 +749,17 @@ namespace Proyecto_Falcom_Bodega {
         public delegate void UsuariosRowChangeEventHandler(object sender, UsuariosRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
         public delegate void MostrarProductosRowChangeEventHandler(object sender, MostrarProductosRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void MostrarProductos2RowChangeEventHandler(object sender, MostrarProductos2RowChangeEvent e);
+=======
+        public delegate void mostrarBitacoraInventarioRowChangeEventHandler(object sender, mostrarBitacoraInventarioRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void mostrarColaboradoresRowChangeEventHandler(object sender, mostrarColaboradoresRowChangeEvent e);
+>>>>>>> Feature_Colaboradores
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -3690,6 +3759,7 @@ namespace Proyecto_Falcom_Bodega {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+<<<<<<< HEAD
         public partial class MostrarProductosDataTable : global::System.Data.TypedTableBase<MostrarProductosRow> {
             
             private global::System.Data.DataColumn columnCodigo_Producto;
@@ -3708,6 +3778,32 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public MostrarProductosDataTable() {
                 this.TableName = "MostrarProductos";
+=======
+        public partial class mostrarBitacoraInventarioDataTable : global::System.Data.TypedTableBase<mostrarBitacoraInventarioRow> {
+            
+            private global::System.Data.DataColumn columnCódigo_bitácora;
+            
+            private global::System.Data.DataColumn columnCódigo_inventario;
+            
+            private global::System.Data.DataColumn columnCódigo_solicitud;
+            
+            private global::System.Data.DataColumn columnCódigo_Cliente;
+            
+            private global::System.Data.DataColumn columnCliente;
+            
+            private global::System.Data.DataColumn columnCódigo_colaborador;
+            
+            private global::System.Data.DataColumn columnColaborador;
+            
+            private global::System.Data.DataColumn columnDescripción;
+            
+            private global::System.Data.DataColumn columnFecha_registro;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public mostrarBitacoraInventarioDataTable() {
+                this.TableName = "mostrarBitacoraInventario";
+>>>>>>> Feature_Colaboradores
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -3715,7 +3811,11 @@ namespace Proyecto_Falcom_Bodega {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             internal MostrarProductosDataTable(global::System.Data.DataTable table) {
+=======
+            internal mostrarBitacoraInventarioDataTable(global::System.Data.DataTable table) {
+>>>>>>> Feature_Colaboradores
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -3732,56 +3832,120 @@ namespace Proyecto_Falcom_Bodega {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             protected MostrarProductosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+=======
+            protected mostrarBitacoraInventarioDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+>>>>>>> Feature_Colaboradores
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn Codigo_ProductoColumn {
                 get {
                     return this.columnCodigo_Producto;
+=======
+            public global::System.Data.DataColumn Código_bitácoraColumn {
+                get {
+                    return this.columnCódigo_bitácora;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn nombreproductoColumn {
                 get {
                     return this.columnnombreproducto;
+=======
+            public global::System.Data.DataColumn Código_inventarioColumn {
+                get {
+                    return this.columnCódigo_inventario;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn cantidadColumn {
                 get {
                     return this.columncantidad;
+=======
+            public global::System.Data.DataColumn Código_solicitudColumn {
+                get {
+                    return this.columnCódigo_solicitud;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn fechaIngresoColumn {
                 get {
                     return this.columnfechaIngreso;
+=======
+            public global::System.Data.DataColumn Código_ClienteColumn {
+                get {
+                    return this.columnCódigo_Cliente;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn fechaCaducidadColumn {
                 get {
                     return this.columnfechaCaducidad;
+=======
+            public global::System.Data.DataColumn ClienteColumn {
+                get {
+                    return this.columnCliente;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn duracionPromedioColumn {
                 get {
                     return this.columnduracionPromedio;
+=======
+            public global::System.Data.DataColumn Código_colaboradorColumn {
+                get {
+                    return this.columnCódigo_colaborador;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ColaboradorColumn {
+                get {
+                    return this.columnColaborador;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DescripciónColumn {
+                get {
+                    return this.columnDescripción;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Fecha_registroColumn {
+                get {
+                    return this.columnFecha_registro;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
@@ -3796,13 +3960,20 @@ namespace Proyecto_Falcom_Bodega {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public MostrarProductosRow this[int index] {
                 get {
                     return ((MostrarProductosRow)(this.Rows[index]));
+=======
+            public mostrarBitacoraInventarioRow this[int index] {
+                get {
+                    return ((mostrarBitacoraInventarioRow)(this.Rows[index]));
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public event MostrarProductosRowChangeEventHandler MostrarProductosRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -3817,11 +3988,28 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void AddMostrarProductosRow(MostrarProductosRow row) {
+=======
+            public event mostrarBitacoraInventarioRowChangeEventHandler mostrarBitacoraInventarioRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event mostrarBitacoraInventarioRowChangeEventHandler mostrarBitacoraInventarioRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event mostrarBitacoraInventarioRowChangeEventHandler mostrarBitacoraInventarioRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event mostrarBitacoraInventarioRowChangeEventHandler mostrarBitacoraInventarioRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddmostrarBitacoraInventarioRow(mostrarBitacoraInventarioRow row) {
+>>>>>>> Feature_Colaboradores
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public MostrarProductosRow AddMostrarProductosRow(int Codigo_Producto, string nombreproducto, decimal cantidad, System.DateTime fechaIngreso, System.DateTime fechaCaducidad, System.DateTime duracionPromedio) {
                 MostrarProductosRow rowMostrarProductosRow = ((MostrarProductosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -3834,12 +4022,40 @@ namespace Proyecto_Falcom_Bodega {
                 rowMostrarProductosRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowMostrarProductosRow);
                 return rowMostrarProductosRow;
+=======
+            public mostrarBitacoraInventarioRow AddmostrarBitacoraInventarioRow(int Código_inventario, int Código_solicitud, int Código_Cliente, string Cliente, int Código_colaborador, string Colaborador, string Descripción, System.DateTime Fecha_registro) {
+                mostrarBitacoraInventarioRow rowmostrarBitacoraInventarioRow = ((mostrarBitacoraInventarioRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Código_inventario,
+                        Código_solicitud,
+                        Código_Cliente,
+                        Cliente,
+                        Código_colaborador,
+                        Colaborador,
+                        Descripción,
+                        Fecha_registro};
+                rowmostrarBitacoraInventarioRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowmostrarBitacoraInventarioRow);
+                return rowmostrarBitacoraInventarioRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public mostrarBitacoraInventarioRow FindByCódigo_bitácora(int Código_bitácora) {
+                return ((mostrarBitacoraInventarioRow)(this.Rows.Find(new object[] {
+                            Código_bitácora})));
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
+<<<<<<< HEAD
                 MostrarProductosDataTable cln = ((MostrarProductosDataTable)(base.Clone()));
+=======
+                mostrarBitacoraInventarioDataTable cln = ((mostrarBitacoraInventarioDataTable)(base.Clone()));
+>>>>>>> Feature_Colaboradores
                 cln.InitVars();
                 return cln;
             }
@@ -3847,23 +4063,40 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
+<<<<<<< HEAD
                 return new MostrarProductosDataTable();
+=======
+                return new mostrarBitacoraInventarioDataTable();
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
+<<<<<<< HEAD
                 this.columnCodigo_Producto = base.Columns["Codigo_Producto"];
                 this.columnnombreproducto = base.Columns["nombreproducto"];
                 this.columncantidad = base.Columns["cantidad"];
                 this.columnfechaIngreso = base.Columns["fechaIngreso"];
                 this.columnfechaCaducidad = base.Columns["fechaCaducidad"];
                 this.columnduracionPromedio = base.Columns["duracionPromedio"];
+=======
+                this.columnCódigo_bitácora = base.Columns["Código bitácora"];
+                this.columnCódigo_inventario = base.Columns["Código inventario"];
+                this.columnCódigo_solicitud = base.Columns["Código solicitud"];
+                this.columnCódigo_Cliente = base.Columns["Código Cliente"];
+                this.columnCliente = base.Columns["Cliente"];
+                this.columnCódigo_colaborador = base.Columns["Código colaborador"];
+                this.columnColaborador = base.Columns["Colaborador"];
+                this.columnDescripción = base.Columns["Descripción"];
+                this.columnFecha_registro = base.Columns["Fecha registro"];
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
+<<<<<<< HEAD
                 this.columnCodigo_Producto = new global::System.Data.DataColumn("Codigo_Producto", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCodigo_Producto);
                 this.columnnombreproducto = new global::System.Data.DataColumn("nombreproducto", typeof(string), null, global::System.Data.MappingType.Element);
@@ -3877,32 +4110,87 @@ namespace Proyecto_Falcom_Bodega {
                 this.columnduracionPromedio = new global::System.Data.DataColumn("duracionPromedio", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnduracionPromedio);
                 this.columnnombreproducto.MaxLength = 50;
+=======
+                this.columnCódigo_bitácora = new global::System.Data.DataColumn("Código bitácora", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCódigo_bitácora);
+                this.columnCódigo_inventario = new global::System.Data.DataColumn("Código inventario", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCódigo_inventario);
+                this.columnCódigo_solicitud = new global::System.Data.DataColumn("Código solicitud", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCódigo_solicitud);
+                this.columnCódigo_Cliente = new global::System.Data.DataColumn("Código Cliente", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCódigo_Cliente);
+                this.columnCliente = new global::System.Data.DataColumn("Cliente", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCliente);
+                this.columnCódigo_colaborador = new global::System.Data.DataColumn("Código colaborador", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCódigo_colaborador);
+                this.columnColaborador = new global::System.Data.DataColumn("Colaborador", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnColaborador);
+                this.columnDescripción = new global::System.Data.DataColumn("Descripción", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDescripción);
+                this.columnFecha_registro = new global::System.Data.DataColumn("Fecha registro", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFecha_registro);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnCódigo_bitácora}, true));
+                this.columnCódigo_bitácora.AutoIncrement = true;
+                this.columnCódigo_bitácora.AllowDBNull = false;
+                this.columnCódigo_bitácora.ReadOnly = true;
+                this.columnCódigo_bitácora.Unique = true;
+                this.columnCódigo_inventario.AllowDBNull = false;
+                this.columnCódigo_solicitud.AllowDBNull = false;
+                this.columnCódigo_Cliente.AllowDBNull = false;
+                this.columnCliente.AllowDBNull = false;
+                this.columnCliente.MaxLength = 30;
+                this.columnCódigo_colaborador.AllowDBNull = false;
+                this.columnColaborador.AllowDBNull = false;
+                this.columnColaborador.MaxLength = 50;
+                this.columnDescripción.AllowDBNull = false;
+                this.columnDescripción.MaxLength = 100;
+                this.columnFecha_registro.AllowDBNull = false;
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public MostrarProductosRow NewMostrarProductosRow() {
                 return ((MostrarProductosRow)(this.NewRow()));
+=======
+            public mostrarBitacoraInventarioRow NewmostrarBitacoraInventarioRow() {
+                return ((mostrarBitacoraInventarioRow)(this.NewRow()));
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+<<<<<<< HEAD
                 return new MostrarProductosRow(builder);
+=======
+                return new mostrarBitacoraInventarioRow(builder);
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
+<<<<<<< HEAD
                 return typeof(MostrarProductosRow);
+=======
+                return typeof(mostrarBitacoraInventarioRow);
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
+<<<<<<< HEAD
                 if ((this.MostrarProductosRowChanged != null)) {
                     this.MostrarProductosRowChanged(this, new MostrarProductosRowChangeEvent(((MostrarProductosRow)(e.Row)), e.Action));
+=======
+                if ((this.mostrarBitacoraInventarioRowChanged != null)) {
+                    this.mostrarBitacoraInventarioRowChanged(this, new mostrarBitacoraInventarioRowChangeEvent(((mostrarBitacoraInventarioRow)(e.Row)), e.Action));
+>>>>>>> Feature_Colaboradores
                 }
             }
             
@@ -3910,8 +4198,13 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
+<<<<<<< HEAD
                 if ((this.MostrarProductosRowChanging != null)) {
                     this.MostrarProductosRowChanging(this, new MostrarProductosRowChangeEvent(((MostrarProductosRow)(e.Row)), e.Action));
+=======
+                if ((this.mostrarBitacoraInventarioRowChanging != null)) {
+                    this.mostrarBitacoraInventarioRowChanging(this, new mostrarBitacoraInventarioRowChangeEvent(((mostrarBitacoraInventarioRow)(e.Row)), e.Action));
+>>>>>>> Feature_Colaboradores
                 }
             }
             
@@ -3919,8 +4212,13 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
+<<<<<<< HEAD
                 if ((this.MostrarProductosRowDeleted != null)) {
                     this.MostrarProductosRowDeleted(this, new MostrarProductosRowChangeEvent(((MostrarProductosRow)(e.Row)), e.Action));
+=======
+                if ((this.mostrarBitacoraInventarioRowDeleted != null)) {
+                    this.mostrarBitacoraInventarioRowDeleted(this, new mostrarBitacoraInventarioRowChangeEvent(((mostrarBitacoraInventarioRow)(e.Row)), e.Action));
+>>>>>>> Feature_Colaboradores
                 }
             }
             
@@ -3928,14 +4226,23 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
+<<<<<<< HEAD
                 if ((this.MostrarProductosRowDeleting != null)) {
                     this.MostrarProductosRowDeleting(this, new MostrarProductosRowChangeEvent(((MostrarProductosRow)(e.Row)), e.Action));
+=======
+                if ((this.mostrarBitacoraInventarioRowDeleting != null)) {
+                    this.mostrarBitacoraInventarioRowDeleting(this, new mostrarBitacoraInventarioRowChangeEvent(((mostrarBitacoraInventarioRow)(e.Row)), e.Action));
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public void RemoveMostrarProductosRow(MostrarProductosRow row) {
+=======
+            public void RemovemostrarBitacoraInventarioRow(mostrarBitacoraInventarioRow row) {
+>>>>>>> Feature_Colaboradores
                 this.Rows.Remove(row);
             }
             
@@ -3962,7 +4269,11 @@ namespace Proyecto_Falcom_Bodega {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
+<<<<<<< HEAD
                 attribute2.FixedValue = "MostrarProductosDataTable";
+=======
+                attribute2.FixedValue = "mostrarBitacoraInventarioDataTable";
+>>>>>>> Feature_Colaboradores
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -4008,6 +4319,7 @@ namespace Proyecto_Falcom_Bodega {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+<<<<<<< HEAD
         public partial class MostrarProductos2DataTable : global::System.Data.TypedTableBase<MostrarProductos2Row> {
             
             private global::System.Data.DataColumn columnCodigo_Producto;
@@ -4026,6 +4338,34 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public MostrarProductos2DataTable() {
                 this.TableName = "MostrarProductos2";
+=======
+        public partial class mostrarColaboradoresDataTable : global::System.Data.TypedTableBase<mostrarColaboradoresRow> {
+            
+            private global::System.Data.DataColumn columnCódigo_Colaborador;
+            
+            private global::System.Data.DataColumn columnNombre;
+            
+            private global::System.Data.DataColumn columnIdentidad;
+            
+            private global::System.Data.DataColumn columnDepartamento;
+            
+            private global::System.Data.DataColumn columnEdad;
+            
+            private global::System.Data.DataColumn columnCorreo_Electronico;
+            
+            private global::System.Data.DataColumn columnSalario;
+            
+            private global::System.Data.DataColumn columnTeléfono;
+            
+            private global::System.Data.DataColumn columnEstado_Civil;
+            
+            private global::System.Data.DataColumn columnEstado_Empresarial;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public mostrarColaboradoresDataTable() {
+                this.TableName = "mostrarColaboradores";
+>>>>>>> Feature_Colaboradores
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -4033,7 +4373,11 @@ namespace Proyecto_Falcom_Bodega {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             internal MostrarProductos2DataTable(global::System.Data.DataTable table) {
+=======
+            internal mostrarColaboradoresDataTable(global::System.Data.DataTable table) {
+>>>>>>> Feature_Colaboradores
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -4050,56 +4394,128 @@ namespace Proyecto_Falcom_Bodega {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             protected MostrarProductos2DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+=======
+            protected mostrarColaboradoresDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+>>>>>>> Feature_Colaboradores
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn Codigo_ProductoColumn {
                 get {
                     return this.columnCodigo_Producto;
+=======
+            public global::System.Data.DataColumn Código_ColaboradorColumn {
+                get {
+                    return this.columnCódigo_Colaborador;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn nombreproductoColumn {
                 get {
                     return this.columnnombreproducto;
+=======
+            public global::System.Data.DataColumn NombreColumn {
+                get {
+                    return this.columnNombre;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn cantidadColumn {
                 get {
                     return this.columncantidad;
+=======
+            public global::System.Data.DataColumn IdentidadColumn {
+                get {
+                    return this.columnIdentidad;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn fechaIngresoColumn {
                 get {
                     return this.columnfechaIngreso;
+=======
+            public global::System.Data.DataColumn DepartamentoColumn {
+                get {
+                    return this.columnDepartamento;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn fechaCaducidadColumn {
                 get {
                     return this.columnfechaCaducidad;
+=======
+            public global::System.Data.DataColumn EdadColumn {
+                get {
+                    return this.columnEdad;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Correo_ElectronicoColumn {
+                get {
+                    return this.columnCorreo_Electronico;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn SalarioColumn {
+                get {
+                    return this.columnSalario;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn TeléfonoColumn {
+                get {
+                    return this.columnTeléfono;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Estado_CivilColumn {
+                get {
+                    return this.columnEstado_Civil;
+>>>>>>> Feature_Colaboradores
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn Caducidad_endiasColumn {
                 get {
                     return this.columnCaducidad_endias;
+=======
+            public global::System.Data.DataColumn Estado_EmpresarialColumn {
+                get {
+                    return this.columnEstado_Empresarial;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
@@ -4114,13 +4530,20 @@ namespace Proyecto_Falcom_Bodega {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public MostrarProductos2Row this[int index] {
                 get {
                     return ((MostrarProductos2Row)(this.Rows[index]));
+=======
+            public mostrarColaboradoresRow this[int index] {
+                get {
+                    return ((mostrarColaboradoresRow)(this.Rows[index]));
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public event MostrarProductos2RowChangeEventHandler MostrarProductos2RowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -4135,11 +4558,28 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void AddMostrarProductos2Row(MostrarProductos2Row row) {
+=======
+            public event mostrarColaboradoresRowChangeEventHandler mostrarColaboradoresRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event mostrarColaboradoresRowChangeEventHandler mostrarColaboradoresRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event mostrarColaboradoresRowChangeEventHandler mostrarColaboradoresRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event mostrarColaboradoresRowChangeEventHandler mostrarColaboradoresRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddmostrarColaboradoresRow(mostrarColaboradoresRow row) {
+>>>>>>> Feature_Colaboradores
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public MostrarProductos2Row AddMostrarProductos2Row(int Codigo_Producto, string nombreproducto, decimal cantidad, System.DateTime fechaIngreso, System.DateTime fechaCaducidad, int Caducidad_endias) {
                 MostrarProductos2Row rowMostrarProductos2Row = ((MostrarProductos2Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -4152,12 +4592,41 @@ namespace Proyecto_Falcom_Bodega {
                 rowMostrarProductos2Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowMostrarProductos2Row);
                 return rowMostrarProductos2Row;
+=======
+            public mostrarColaboradoresRow AddmostrarColaboradoresRow(string Nombre, string Identidad, string Departamento, int Edad, string Correo_Electronico, decimal Salario, string Teléfono, string Estado_Civil, string Estado_Empresarial) {
+                mostrarColaboradoresRow rowmostrarColaboradoresRow = ((mostrarColaboradoresRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Nombre,
+                        Identidad,
+                        Departamento,
+                        Edad,
+                        Correo_Electronico,
+                        Salario,
+                        Teléfono,
+                        Estado_Civil,
+                        Estado_Empresarial};
+                rowmostrarColaboradoresRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowmostrarColaboradoresRow);
+                return rowmostrarColaboradoresRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public mostrarColaboradoresRow FindByCódigo_Colaborador(int Código_Colaborador) {
+                return ((mostrarColaboradoresRow)(this.Rows.Find(new object[] {
+                            Código_Colaborador})));
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
+<<<<<<< HEAD
                 MostrarProductos2DataTable cln = ((MostrarProductos2DataTable)(base.Clone()));
+=======
+                mostrarColaboradoresDataTable cln = ((mostrarColaboradoresDataTable)(base.Clone()));
+>>>>>>> Feature_Colaboradores
                 cln.InitVars();
                 return cln;
             }
@@ -4165,23 +4634,41 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
+<<<<<<< HEAD
                 return new MostrarProductos2DataTable();
+=======
+                return new mostrarColaboradoresDataTable();
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
+<<<<<<< HEAD
                 this.columnCodigo_Producto = base.Columns["Codigo_Producto"];
                 this.columnnombreproducto = base.Columns["nombreproducto"];
                 this.columncantidad = base.Columns["cantidad"];
                 this.columnfechaIngreso = base.Columns["fechaIngreso"];
                 this.columnfechaCaducidad = base.Columns["fechaCaducidad"];
                 this.columnCaducidad_endias = base.Columns["Caducidad_endias"];
+=======
+                this.columnCódigo_Colaborador = base.Columns["Código Colaborador"];
+                this.columnNombre = base.Columns["Nombre"];
+                this.columnIdentidad = base.Columns["Identidad"];
+                this.columnDepartamento = base.Columns["Departamento"];
+                this.columnEdad = base.Columns["Edad"];
+                this.columnCorreo_Electronico = base.Columns["Correo Electronico"];
+                this.columnSalario = base.Columns["Salario"];
+                this.columnTeléfono = base.Columns["Teléfono"];
+                this.columnEstado_Civil = base.Columns["Estado Civil"];
+                this.columnEstado_Empresarial = base.Columns["Estado Empresarial"];
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
+<<<<<<< HEAD
                 this.columnCodigo_Producto = new global::System.Data.DataColumn("Codigo_Producto", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCodigo_Producto);
                 this.columnnombreproducto = new global::System.Data.DataColumn("nombreproducto", typeof(string), null, global::System.Data.MappingType.Element);
@@ -4196,32 +4683,93 @@ namespace Proyecto_Falcom_Bodega {
                 base.Columns.Add(this.columnCaducidad_endias);
                 this.columnnombreproducto.MaxLength = 50;
                 this.columnCaducidad_endias.ReadOnly = true;
+=======
+                this.columnCódigo_Colaborador = new global::System.Data.DataColumn("Código Colaborador", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCódigo_Colaborador);
+                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombre);
+                this.columnIdentidad = new global::System.Data.DataColumn("Identidad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIdentidad);
+                this.columnDepartamento = new global::System.Data.DataColumn("Departamento", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDepartamento);
+                this.columnEdad = new global::System.Data.DataColumn("Edad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEdad);
+                this.columnCorreo_Electronico = new global::System.Data.DataColumn("Correo Electronico", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCorreo_Electronico);
+                this.columnSalario = new global::System.Data.DataColumn("Salario", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSalario);
+                this.columnTeléfono = new global::System.Data.DataColumn("Teléfono", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTeléfono);
+                this.columnEstado_Civil = new global::System.Data.DataColumn("Estado Civil", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEstado_Civil);
+                this.columnEstado_Empresarial = new global::System.Data.DataColumn("Estado Empresarial", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEstado_Empresarial);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnCódigo_Colaborador}, true));
+                this.columnCódigo_Colaborador.AutoIncrement = true;
+                this.columnCódigo_Colaborador.AllowDBNull = false;
+                this.columnCódigo_Colaborador.ReadOnly = true;
+                this.columnCódigo_Colaborador.Unique = true;
+                this.columnNombre.AllowDBNull = false;
+                this.columnNombre.MaxLength = 50;
+                this.columnIdentidad.AllowDBNull = false;
+                this.columnIdentidad.MaxLength = 13;
+                this.columnDepartamento.AllowDBNull = false;
+                this.columnDepartamento.MaxLength = 25;
+                this.columnEdad.ReadOnly = true;
+                this.columnCorreo_Electronico.MaxLength = 30;
+                this.columnSalario.AllowDBNull = false;
+                this.columnTeléfono.AllowDBNull = false;
+                this.columnTeléfono.MaxLength = 11;
+                this.columnEstado_Civil.AllowDBNull = false;
+                this.columnEstado_Civil.MaxLength = 20;
+                this.columnEstado_Empresarial.AllowDBNull = false;
+                this.columnEstado_Empresarial.MaxLength = 50;
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public MostrarProductos2Row NewMostrarProductos2Row() {
                 return ((MostrarProductos2Row)(this.NewRow()));
+=======
+            public mostrarColaboradoresRow NewmostrarColaboradoresRow() {
+                return ((mostrarColaboradoresRow)(this.NewRow()));
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+<<<<<<< HEAD
                 return new MostrarProductos2Row(builder);
+=======
+                return new mostrarColaboradoresRow(builder);
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
+<<<<<<< HEAD
                 return typeof(MostrarProductos2Row);
+=======
+                return typeof(mostrarColaboradoresRow);
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
+<<<<<<< HEAD
                 if ((this.MostrarProductos2RowChanged != null)) {
                     this.MostrarProductos2RowChanged(this, new MostrarProductos2RowChangeEvent(((MostrarProductos2Row)(e.Row)), e.Action));
+=======
+                if ((this.mostrarColaboradoresRowChanged != null)) {
+                    this.mostrarColaboradoresRowChanged(this, new mostrarColaboradoresRowChangeEvent(((mostrarColaboradoresRow)(e.Row)), e.Action));
+>>>>>>> Feature_Colaboradores
                 }
             }
             
@@ -4229,8 +4777,13 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
+<<<<<<< HEAD
                 if ((this.MostrarProductos2RowChanging != null)) {
                     this.MostrarProductos2RowChanging(this, new MostrarProductos2RowChangeEvent(((MostrarProductos2Row)(e.Row)), e.Action));
+=======
+                if ((this.mostrarColaboradoresRowChanging != null)) {
+                    this.mostrarColaboradoresRowChanging(this, new mostrarColaboradoresRowChangeEvent(((mostrarColaboradoresRow)(e.Row)), e.Action));
+>>>>>>> Feature_Colaboradores
                 }
             }
             
@@ -4238,8 +4791,13 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
+<<<<<<< HEAD
                 if ((this.MostrarProductos2RowDeleted != null)) {
                     this.MostrarProductos2RowDeleted(this, new MostrarProductos2RowChangeEvent(((MostrarProductos2Row)(e.Row)), e.Action));
+=======
+                if ((this.mostrarColaboradoresRowDeleted != null)) {
+                    this.mostrarColaboradoresRowDeleted(this, new mostrarColaboradoresRowChangeEvent(((mostrarColaboradoresRow)(e.Row)), e.Action));
+>>>>>>> Feature_Colaboradores
                 }
             }
             
@@ -4247,14 +4805,23 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
+<<<<<<< HEAD
                 if ((this.MostrarProductos2RowDeleting != null)) {
                     this.MostrarProductos2RowDeleting(this, new MostrarProductos2RowChangeEvent(((MostrarProductos2Row)(e.Row)), e.Action));
+=======
+                if ((this.mostrarColaboradoresRowDeleting != null)) {
+                    this.mostrarColaboradoresRowDeleting(this, new mostrarColaboradoresRowChangeEvent(((mostrarColaboradoresRow)(e.Row)), e.Action));
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public void RemoveMostrarProductos2Row(MostrarProductos2Row row) {
+=======
+            public void RemovemostrarColaboradoresRow(mostrarColaboradoresRow row) {
+>>>>>>> Feature_Colaboradores
                 this.Rows.Remove(row);
             }
             
@@ -4281,7 +4848,11 @@ namespace Proyecto_Falcom_Bodega {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
+<<<<<<< HEAD
                 attribute2.FixedValue = "MostrarProductos2DataTable";
+=======
+                attribute2.FixedValue = "mostrarColaboradoresDataTable";
+>>>>>>> Feature_Colaboradores
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -5407,6 +5978,7 @@ namespace Proyecto_Falcom_Bodega {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
+<<<<<<< HEAD
         public partial class MostrarProductosRow : global::System.Data.DataRow {
             
             private MostrarProductosDataTable tableMostrarProductos;
@@ -5416,10 +5988,22 @@ namespace Proyecto_Falcom_Bodega {
             internal MostrarProductosRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tableMostrarProductos = ((MostrarProductosDataTable)(this.Table));
+=======
+        public partial class mostrarBitacoraInventarioRow : global::System.Data.DataRow {
+            
+            private mostrarBitacoraInventarioDataTable tablemostrarBitacoraInventario;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal mostrarBitacoraInventarioRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablemostrarBitacoraInventario = ((mostrarBitacoraInventarioDataTable)(this.Table));
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public int Codigo_Producto {
                 get {
                     try {
@@ -5432,11 +6016,20 @@ namespace Proyecto_Falcom_Bodega {
                 }
                 set {
                     this[this.tableMostrarProductos.Codigo_ProductoColumn] = value;
+=======
+            public int Código_bitácora {
+                get {
+                    return ((int)(this[this.tablemostrarBitacoraInventario.Código_bitácoraColumn]));
+                }
+                set {
+                    this[this.tablemostrarBitacoraInventario.Código_bitácoraColumn] = value;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public string nombreproducto {
                 get {
                     try {
@@ -5449,11 +6042,20 @@ namespace Proyecto_Falcom_Bodega {
                 }
                 set {
                     this[this.tableMostrarProductos.nombreproductoColumn] = value;
+=======
+            public int Código_inventario {
+                get {
+                    return ((int)(this[this.tablemostrarBitacoraInventario.Código_inventarioColumn]));
+                }
+                set {
+                    this[this.tablemostrarBitacoraInventario.Código_inventarioColumn] = value;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public decimal cantidad {
                 get {
                     try {
@@ -5465,11 +6067,20 @@ namespace Proyecto_Falcom_Bodega {
                 }
                 set {
                     this[this.tableMostrarProductos.cantidadColumn] = value;
+=======
+            public int Código_solicitud {
+                get {
+                    return ((int)(this[this.tablemostrarBitacoraInventario.Código_solicitudColumn]));
+                }
+                set {
+                    this[this.tablemostrarBitacoraInventario.Código_solicitudColumn] = value;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public System.DateTime fechaIngreso {
                 get {
                     try {
@@ -5481,11 +6092,20 @@ namespace Proyecto_Falcom_Bodega {
                 }
                 set {
                     this[this.tableMostrarProductos.fechaIngresoColumn] = value;
+=======
+            public int Código_Cliente {
+                get {
+                    return ((int)(this[this.tablemostrarBitacoraInventario.Código_ClienteColumn]));
+                }
+                set {
+                    this[this.tablemostrarBitacoraInventario.Código_ClienteColumn] = value;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public System.DateTime fechaCaducidad {
                 get {
                     try {
@@ -5498,11 +6118,20 @@ namespace Proyecto_Falcom_Bodega {
                 }
                 set {
                     this[this.tableMostrarProductos.fechaCaducidadColumn] = value;
+=======
+            public string Cliente {
+                get {
+                    return ((string)(this[this.tablemostrarBitacoraInventario.ClienteColumn]));
+                }
+                set {
+                    this[this.tablemostrarBitacoraInventario.ClienteColumn] = value;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public System.DateTime duracionPromedio {
                 get {
                     try {
@@ -5515,11 +6144,20 @@ namespace Proyecto_Falcom_Bodega {
                 }
                 set {
                     this[this.tableMostrarProductos.duracionPromedioColumn] = value;
+=======
+            public int Código_colaborador {
+                get {
+                    return ((int)(this[this.tablemostrarBitacoraInventario.Código_colaboradorColumn]));
+                }
+                set {
+                    this[this.tablemostrarBitacoraInventario.Código_colaboradorColumn] = value;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public bool IsCodigo_ProductoNull() {
                 return this.IsNull(this.tableMostrarProductos.Codigo_ProductoColumn);
             }
@@ -5576,24 +6214,54 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetfechaCaducidadNull() {
                 this[this.tableMostrarProductos.fechaCaducidadColumn] = global::System.Convert.DBNull;
+=======
+            public string Colaborador {
+                get {
+                    return ((string)(this[this.tablemostrarBitacoraInventario.ColaboradorColumn]));
+                }
+                set {
+                    this[this.tablemostrarBitacoraInventario.ColaboradorColumn] = value;
+                }
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public bool IsduracionPromedioNull() {
                 return this.IsNull(this.tableMostrarProductos.duracionPromedioColumn);
+=======
+            public string Descripción {
+                get {
+                    return ((string)(this[this.tablemostrarBitacoraInventario.DescripciónColumn]));
+                }
+                set {
+                    this[this.tablemostrarBitacoraInventario.DescripciónColumn] = value;
+                }
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public void SetduracionPromedioNull() {
                 this[this.tableMostrarProductos.duracionPromedioColumn] = global::System.Convert.DBNull;
+=======
+            public System.DateTime Fecha_registro {
+                get {
+                    return ((global::System.DateTime)(this[this.tablemostrarBitacoraInventario.Fecha_registroColumn]));
+                }
+                set {
+                    this[this.tablemostrarBitacoraInventario.Fecha_registroColumn] = value;
+                }
+>>>>>>> Feature_Colaboradores
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
+<<<<<<< HEAD
         public partial class MostrarProductos2Row : global::System.Data.DataRow {
             
             private MostrarProductos2DataTable tableMostrarProductos2;
@@ -5603,10 +6271,22 @@ namespace Proyecto_Falcom_Bodega {
             internal MostrarProductos2Row(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tableMostrarProductos2 = ((MostrarProductos2DataTable)(this.Table));
+=======
+        public partial class mostrarColaboradoresRow : global::System.Data.DataRow {
+            
+            private mostrarColaboradoresDataTable tablemostrarColaboradores;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal mostrarColaboradoresRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablemostrarColaboradores = ((mostrarColaboradoresDataTable)(this.Table));
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public int Codigo_Producto {
                 get {
                     try {
@@ -5619,11 +6299,20 @@ namespace Proyecto_Falcom_Bodega {
                 }
                 set {
                     this[this.tableMostrarProductos2.Codigo_ProductoColumn] = value;
+=======
+            public int Código_Colaborador {
+                get {
+                    return ((int)(this[this.tablemostrarColaboradores.Código_ColaboradorColumn]));
+                }
+                set {
+                    this[this.tablemostrarColaboradores.Código_ColaboradorColumn] = value;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public string nombreproducto {
                 get {
                     try {
@@ -5636,11 +6325,20 @@ namespace Proyecto_Falcom_Bodega {
                 }
                 set {
                     this[this.tableMostrarProductos2.nombreproductoColumn] = value;
+=======
+            public string Nombre {
+                get {
+                    return ((string)(this[this.tablemostrarColaboradores.NombreColumn]));
+                }
+                set {
+                    this[this.tablemostrarColaboradores.NombreColumn] = value;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public decimal cantidad {
                 get {
                     try {
@@ -5652,11 +6350,20 @@ namespace Proyecto_Falcom_Bodega {
                 }
                 set {
                     this[this.tableMostrarProductos2.cantidadColumn] = value;
+=======
+            public string Identidad {
+                get {
+                    return ((string)(this[this.tablemostrarColaboradores.IdentidadColumn]));
+                }
+                set {
+                    this[this.tablemostrarColaboradores.IdentidadColumn] = value;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public System.DateTime fechaIngreso {
                 get {
                     try {
@@ -5668,11 +6375,20 @@ namespace Proyecto_Falcom_Bodega {
                 }
                 set {
                     this[this.tableMostrarProductos2.fechaIngresoColumn] = value;
+=======
+            public string Departamento {
+                get {
+                    return ((string)(this[this.tablemostrarColaboradores.DepartamentoColumn]));
+                }
+                set {
+                    this[this.tablemostrarColaboradores.DepartamentoColumn] = value;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public System.DateTime fechaCaducidad {
                 get {
                     try {
@@ -5685,11 +6401,25 @@ namespace Proyecto_Falcom_Bodega {
                 }
                 set {
                     this[this.tableMostrarProductos2.fechaCaducidadColumn] = value;
+=======
+            public int Edad {
+                get {
+                    try {
+                        return ((int)(this[this.tablemostrarColaboradores.EdadColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Edad\' de la tabla \'mostrarColaboradores\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablemostrarColaboradores.EdadColumn] = value;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public int Caducidad_endias {
                 get {
                     try {
@@ -5702,11 +6432,26 @@ namespace Proyecto_Falcom_Bodega {
                 }
                 set {
                     this[this.tableMostrarProductos2.Caducidad_endiasColumn] = value;
+=======
+            public string Correo_Electronico {
+                get {
+                    try {
+                        return ((string)(this[this.tablemostrarColaboradores.Correo_ElectronicoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Correo Electronico\' de la tabla \'mostrarColaboradores\' es" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablemostrarColaboradores.Correo_ElectronicoColumn] = value;
+>>>>>>> Feature_Colaboradores
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public bool IsCodigo_ProductoNull() {
                 return this.IsNull(this.tableMostrarProductos2.Codigo_ProductoColumn);
             }
@@ -5733,48 +6478,107 @@ namespace Proyecto_Falcom_Bodega {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IscantidadNull() {
                 return this.IsNull(this.tableMostrarProductos2.cantidadColumn);
+=======
+            public decimal Salario {
+                get {
+                    return ((decimal)(this[this.tablemostrarColaboradores.SalarioColumn]));
+                }
+                set {
+                    this[this.tablemostrarColaboradores.SalarioColumn] = value;
+                }
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public void SetcantidadNull() {
                 this[this.tableMostrarProductos2.cantidadColumn] = global::System.Convert.DBNull;
+=======
+            public string Teléfono {
+                get {
+                    return ((string)(this[this.tablemostrarColaboradores.TeléfonoColumn]));
+                }
+                set {
+                    this[this.tablemostrarColaboradores.TeléfonoColumn] = value;
+                }
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public bool IsfechaIngresoNull() {
                 return this.IsNull(this.tableMostrarProductos2.fechaIngresoColumn);
+=======
+            public string Estado_Civil {
+                get {
+                    return ((string)(this[this.tablemostrarColaboradores.Estado_CivilColumn]));
+                }
+                set {
+                    this[this.tablemostrarColaboradores.Estado_CivilColumn] = value;
+                }
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public void SetfechaIngresoNull() {
                 this[this.tableMostrarProductos2.fechaIngresoColumn] = global::System.Convert.DBNull;
+=======
+            public string Estado_Empresarial {
+                get {
+                    return ((string)(this[this.tablemostrarColaboradores.Estado_EmpresarialColumn]));
+                }
+                set {
+                    this[this.tablemostrarColaboradores.Estado_EmpresarialColumn] = value;
+                }
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public bool IsfechaCaducidadNull() {
                 return this.IsNull(this.tableMostrarProductos2.fechaCaducidadColumn);
+=======
+            public bool IsEdadNull() {
+                return this.IsNull(this.tablemostrarColaboradores.EdadColumn);
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public void SetfechaCaducidadNull() {
                 this[this.tableMostrarProductos2.fechaCaducidadColumn] = global::System.Convert.DBNull;
+=======
+            public void SetEdadNull() {
+                this[this.tablemostrarColaboradores.EdadColumn] = global::System.Convert.DBNull;
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public bool IsCaducidad_endiasNull() {
                 return this.IsNull(this.tableMostrarProductos2.Caducidad_endiasColumn);
+=======
+            public bool IsCorreo_ElectronicoNull() {
+                return this.IsNull(this.tablemostrarColaboradores.Correo_ElectronicoColumn);
+>>>>>>> Feature_Colaboradores
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public void SetCaducidad_endiasNull() {
                 this[this.tableMostrarProductos2.Caducidad_endiasColumn] = global::System.Convert.DBNull;
+=======
+            public void SetCorreo_ElectronicoNull() {
+                this[this.tablemostrarColaboradores.Correo_ElectronicoColumn] = global::System.Convert.DBNull;
+>>>>>>> Feature_Colaboradores
             }
         }
         
@@ -6088,22 +6892,36 @@ namespace Proyecto_Falcom_Bodega {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
         public class MostrarProductosRowChangeEvent : global::System.EventArgs {
             
             private MostrarProductosRow eventRow;
+=======
+        public class mostrarBitacoraInventarioRowChangeEvent : global::System.EventArgs {
+            
+            private mostrarBitacoraInventarioRow eventRow;
+>>>>>>> Feature_Colaboradores
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public MostrarProductosRowChangeEvent(MostrarProductosRow row, global::System.Data.DataRowAction action) {
+=======
+            public mostrarBitacoraInventarioRowChangeEvent(mostrarBitacoraInventarioRow row, global::System.Data.DataRowAction action) {
+>>>>>>> Feature_Colaboradores
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public MostrarProductosRow Row {
+=======
+            public mostrarBitacoraInventarioRow Row {
+>>>>>>> Feature_Colaboradores
                 get {
                     return this.eventRow;
                 }
@@ -6122,22 +6940,36 @@ namespace Proyecto_Falcom_Bodega {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
         public class MostrarProductos2RowChangeEvent : global::System.EventArgs {
             
             private MostrarProductos2Row eventRow;
+=======
+        public class mostrarColaboradoresRowChangeEvent : global::System.EventArgs {
+            
+            private mostrarColaboradoresRow eventRow;
+>>>>>>> Feature_Colaboradores
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public MostrarProductos2RowChangeEvent(MostrarProductos2Row row, global::System.Data.DataRowAction action) {
+=======
+            public mostrarColaboradoresRowChangeEvent(mostrarColaboradoresRow row, global::System.Data.DataRowAction action) {
+>>>>>>> Feature_Colaboradores
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
             public MostrarProductos2Row Row {
+=======
+            public mostrarColaboradoresRow Row {
+>>>>>>> Feature_Colaboradores
                 get {
                     return this.eventRow;
                 }
@@ -6332,7 +7164,11 @@ SELECT CodigoBitacora, CodigoInventario, CodigoSolicitud, CodigoCliente, CodigoC
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
+<<<<<<< HEAD
             this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
+=======
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+>>>>>>> Feature_Colaboradores
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6682,7 +7518,11 @@ SELECT CodigoCliente, NombreCliente, Direccion, Telefono FROM Clientes WHERE (Co
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
+<<<<<<< HEAD
             this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
+=======
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+>>>>>>> Feature_Colaboradores
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7118,7 +7958,11 @@ SELECT codigoColaborador, codigoDepartameto, nombreColaborador, identidadColabor
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
+<<<<<<< HEAD
             this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
+=======
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+>>>>>>> Feature_Colaboradores
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7654,7 +8498,11 @@ SELECT codigoDepartamento, nombreDepartamento FROM departamentos WHERE (codigoDe
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
+<<<<<<< HEAD
             this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
+=======
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+>>>>>>> Feature_Colaboradores
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7983,7 +8831,11 @@ SELECT codigoDetalleSolicitud, codigoSolicitud, codigoInventario, cantidad FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
+<<<<<<< HEAD
             this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
+=======
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+>>>>>>> Feature_Colaboradores
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8275,11 +9127,19 @@ SELECT codigoDetalleSolicitud, codigoSolicitud, codigoInventario, cantidad FROM 
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_cantidad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cantidad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cantidad", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 8, 2, "cantidad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_fechaIngreso", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaIngreso", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+<<<<<<< HEAD
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_fechaIngreso", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaIngreso", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_fechaCaducidad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaCaducidad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_fechaCaducidad", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaCaducidad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_duracionPromedio", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "duracionPromedio", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_duracionPromedio", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "duracionPromedio", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+=======
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_fechaIngreso", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaIngreso", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_fechaCaducidad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaCaducidad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_fechaCaducidad", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaCaducidad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_duracionPromedio", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "duracionPromedio", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_duracionPromedio", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "duracionPromedio", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+>>>>>>> Feature_Colaboradores
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Inventario] ([codigoProducto], [cantidad], [fechaIngreso], [fechaCaducidad], [duracionPromedio]) VALUES (@codigoProducto, @cantidad, @fechaIngreso, @fechaCaducidad, @duracionPromedio);
@@ -8287,9 +9147,15 @@ SELECT codigoInventario, codigoProducto, cantidad, fechaIngreso, fechaCaducidad,
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codigoProducto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codigoProducto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cantidad", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 8, 2, "cantidad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+<<<<<<< HEAD
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fechaIngreso", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaIngreso", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fechaCaducidad", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaCaducidad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@duracionPromedio", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "duracionPromedio", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+=======
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fechaIngreso", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaIngreso", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fechaCaducidad", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaCaducidad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@duracionPromedio", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "duracionPromedio", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+>>>>>>> Feature_Colaboradores
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Inventario] SET [codigoProducto] = @codigoProducto, [cantidad] = @cantidad, [fechaIngreso] = @fechaIngreso, [fechaCaducidad] = @fechaCaducidad, [duracionPromedio] = @duracionPromedio WHERE (([codigoInventario] = @Original_codigoInventario) AND ((@IsNull_codigoProducto = 1 AND [codigoProducto] IS NULL) OR ([codigoProducto] = @Original_codigoProducto)) AND ((@IsNull_cantidad = 1 AND [cantidad] IS NULL) OR ([cantidad] = @Original_cantidad)) AND ((@IsNull_fechaIngreso = 1 AND [fechaIngreso] IS NULL) OR ([fechaIngreso] = @Original_fechaIngreso)) AND ((@IsNull_fechaCaducidad = 1 AND [fechaCaducidad] IS NULL) OR ([fechaCaducidad] = @Original_fechaCaducidad)) AND ((@IsNull_duracionPromedio = 1 AND [duracionPromedio] IS NULL) OR ([duracionPromedio] = @Original_duracionPromedio)));
@@ -8297,20 +9163,34 @@ SELECT codigoInventario, codigoProducto, cantidad, fechaIngreso, fechaCaducidad,
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codigoProducto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codigoProducto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cantidad", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 8, 2, "cantidad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+<<<<<<< HEAD
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fechaIngreso", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaIngreso", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fechaCaducidad", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaCaducidad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@duracionPromedio", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "duracionPromedio", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+=======
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fechaIngreso", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaIngreso", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fechaCaducidad", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaCaducidad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@duracionPromedio", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "duracionPromedio", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+>>>>>>> Feature_Colaboradores
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codigoInventario", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codigoInventario", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_codigoProducto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codigoProducto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codigoProducto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codigoProducto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_cantidad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cantidad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cantidad", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 8, 2, "cantidad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_fechaIngreso", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaIngreso", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+<<<<<<< HEAD
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_fechaIngreso", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaIngreso", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_fechaCaducidad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaCaducidad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_fechaCaducidad", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaCaducidad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_duracionPromedio", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "duracionPromedio", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_duracionPromedio", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "duracionPromedio", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+=======
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_fechaIngreso", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaIngreso", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_fechaCaducidad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaCaducidad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_fechaCaducidad", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fechaCaducidad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_duracionPromedio", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "duracionPromedio", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_duracionPromedio", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "duracionPromedio", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+>>>>>>> Feature_Colaboradores
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codigoInventario", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "codigoInventario", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -8318,7 +9198,11 @@ SELECT codigoInventario, codigoProducto, cantidad, fechaIngreso, fechaCaducidad,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
+<<<<<<< HEAD
             this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
+=======
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+>>>>>>> Feature_Colaboradores
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8776,7 +9660,11 @@ SELECT codigoProducto, nombreproducto, costo, peso, descripcion FROM Producto WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
+<<<<<<< HEAD
             this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
+=======
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+>>>>>>> Feature_Colaboradores
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9194,7 +10082,11 @@ SELECT codigoSolicitud, codigoCliente, codigoColaborador, fechaSolicitud FROM So
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
+<<<<<<< HEAD
             this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
+=======
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+>>>>>>> Feature_Colaboradores
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9514,7 +10406,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
+<<<<<<< HEAD
             this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
+=======
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+>>>>>>> Feature_Colaboradores
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9761,7 +10657,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+<<<<<<< HEAD
     public partial class MostrarProductosTableAdapter : global::System.ComponentModel.Component {
+=======
+    public partial class mostrarBitacoraInventarioTableAdapter : global::System.ComponentModel.Component {
+>>>>>>> Feature_Colaboradores
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -9775,7 +10675,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
         public MostrarProductosTableAdapter() {
+=======
+        public mostrarBitacoraInventarioTableAdapter() {
+>>>>>>> Feature_Colaboradores
             this.ClearBeforeFill = true;
         }
         
@@ -9872,6 +10776,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
+<<<<<<< HEAD
             tableMapping.DataSetTable = "MostrarProductos";
             tableMapping.ColumnMappings.Add("Codigo_Producto", "Codigo_Producto");
             tableMapping.ColumnMappings.Add("nombreproducto", "nombreproducto");
@@ -9879,6 +10784,18 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             tableMapping.ColumnMappings.Add("fechaIngreso", "fechaIngreso");
             tableMapping.ColumnMappings.Add("fechaCaducidad", "fechaCaducidad");
             tableMapping.ColumnMappings.Add("duracionPromedio", "duracionPromedio");
+=======
+            tableMapping.DataSetTable = "mostrarBitacoraInventario";
+            tableMapping.ColumnMappings.Add("Código bitácora", "Código bitácora");
+            tableMapping.ColumnMappings.Add("Código inventario", "Código inventario");
+            tableMapping.ColumnMappings.Add("Código solicitud", "Código solicitud");
+            tableMapping.ColumnMappings.Add("Código Cliente", "Código Cliente");
+            tableMapping.ColumnMappings.Add("Cliente", "Cliente");
+            tableMapping.ColumnMappings.Add("Código colaborador", "Código colaborador");
+            tableMapping.ColumnMappings.Add("Colaborador", "Colaborador");
+            tableMapping.ColumnMappings.Add("Descripción", "Descripción");
+            tableMapping.ColumnMappings.Add("Fecha registro", "Fecha registro");
+>>>>>>> Feature_Colaboradores
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -9886,7 +10803,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
+<<<<<<< HEAD
             this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
+=======
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+>>>>>>> Feature_Colaboradores
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9895,7 +10816,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
+<<<<<<< HEAD
             this._commandCollection[0].CommandText = "dbo.MostrarProductos";
+=======
+            this._commandCollection[0].CommandText = "dbo.mostrarBitacoraInventario";
+>>>>>>> Feature_Colaboradores
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -9904,7 +10829,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+<<<<<<< HEAD
         public virtual int Fill(BodegaFalcomDataSet.MostrarProductosDataTable dataTable) {
+=======
+        public virtual int Fill(BodegaFalcomDataSet.mostrarBitacoraInventarioDataTable dataTable) {
+>>>>>>> Feature_Colaboradores
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9917,9 +10846,15 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+<<<<<<< HEAD
         public virtual BodegaFalcomDataSet.MostrarProductosDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             BodegaFalcomDataSet.MostrarProductosDataTable dataTable = new BodegaFalcomDataSet.MostrarProductosDataTable();
+=======
+        public virtual BodegaFalcomDataSet.mostrarBitacoraInventarioDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            BodegaFalcomDataSet.mostrarBitacoraInventarioDataTable dataTable = new BodegaFalcomDataSet.mostrarBitacoraInventarioDataTable();
+>>>>>>> Feature_Colaboradores
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9934,7 +10869,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+<<<<<<< HEAD
     public partial class MostrarProductos2TableAdapter : global::System.ComponentModel.Component {
+=======
+    public partial class mostrarColaboradoresTableAdapter : global::System.ComponentModel.Component {
+>>>>>>> Feature_Colaboradores
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -9948,7 +10887,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+<<<<<<< HEAD
         public MostrarProductos2TableAdapter() {
+=======
+        public mostrarColaboradoresTableAdapter() {
+>>>>>>> Feature_Colaboradores
             this.ClearBeforeFill = true;
         }
         
@@ -10045,6 +10988,7 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
+<<<<<<< HEAD
             tableMapping.DataSetTable = "MostrarProductos2";
             tableMapping.ColumnMappings.Add("Codigo_Producto", "Codigo_Producto");
             tableMapping.ColumnMappings.Add("nombreproducto", "nombreproducto");
@@ -10052,6 +10996,19 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             tableMapping.ColumnMappings.Add("fechaIngreso", "fechaIngreso");
             tableMapping.ColumnMappings.Add("fechaCaducidad", "fechaCaducidad");
             tableMapping.ColumnMappings.Add("Caducidad_endias", "Caducidad_endias");
+=======
+            tableMapping.DataSetTable = "mostrarColaboradores";
+            tableMapping.ColumnMappings.Add("Código Colaborador", "Código Colaborador");
+            tableMapping.ColumnMappings.Add("Nombre", "Nombre");
+            tableMapping.ColumnMappings.Add("Identidad", "Identidad");
+            tableMapping.ColumnMappings.Add("Departamento", "Departamento");
+            tableMapping.ColumnMappings.Add("Edad", "Edad");
+            tableMapping.ColumnMappings.Add("Correo Electronico", "Correo Electronico");
+            tableMapping.ColumnMappings.Add("Salario", "Salario");
+            tableMapping.ColumnMappings.Add("Teléfono", "Teléfono");
+            tableMapping.ColumnMappings.Add("Estado Civil", "Estado Civil");
+            tableMapping.ColumnMappings.Add("Estado Empresarial", "Estado Empresarial");
+>>>>>>> Feature_Colaboradores
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -10059,7 +11016,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
+<<<<<<< HEAD
             this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString1;
+=======
+            this._connection.ConnectionString = global::Proyecto_Falcom_Bodega.Properties.Settings.Default.BodegaFalcomConnectionString;
+>>>>>>> Feature_Colaboradores
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10068,7 +11029,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
+<<<<<<< HEAD
             this._commandCollection[0].CommandText = "dbo.MostrarProductos2";
+=======
+            this._commandCollection[0].CommandText = "dbo.mostrarColaboradores";
+>>>>>>> Feature_Colaboradores
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -10077,7 +11042,11 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+<<<<<<< HEAD
         public virtual int Fill(BodegaFalcomDataSet.MostrarProductos2DataTable dataTable) {
+=======
+        public virtual int Fill(BodegaFalcomDataSet.mostrarColaboradoresDataTable dataTable) {
+>>>>>>> Feature_Colaboradores
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -10090,9 +11059,15 @@ SELECT CodigoUsuario, NombreUsuario, ContraseñaUsuario, RolUsuario, EstadoUsuar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+<<<<<<< HEAD
         public virtual BodegaFalcomDataSet.MostrarProductos2DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             BodegaFalcomDataSet.MostrarProductos2DataTable dataTable = new BodegaFalcomDataSet.MostrarProductos2DataTable();
+=======
+        public virtual BodegaFalcomDataSet.mostrarColaboradoresDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            BodegaFalcomDataSet.mostrarColaboradoresDataTable dataTable = new BodegaFalcomDataSet.mostrarColaboradoresDataTable();
+>>>>>>> Feature_Colaboradores
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
