@@ -1,0 +1,16 @@
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.exe.config
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.exe
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.pdb
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\MaterialSkin.dll
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csprojAssemblyReference.cache
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Login.resources
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Properties.Resources.resources
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Usuarios.resources
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.GenerateResource.cache
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.CoreCompileInputs.cache
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.CopyComplete
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.exe
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.pdb
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\jonat\OneDrive\Escritorio\II Periodo 2021\Sistemas Inteligentes para Negocios\Proyecto Falcom\BodegaFalcom\Proyecto_Falcom_Bodega\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
