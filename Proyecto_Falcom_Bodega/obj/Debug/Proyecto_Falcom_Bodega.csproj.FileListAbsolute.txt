@@ -1,0 +1,11 @@
+C:\Users\jeffr\OneDrive\Escritorio\Proyecto Falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csprojAssemblyReference.cache
+C:\Users\jeffr\OneDrive\Escritorio\Proyecto Falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.CrearSolicitud.resources
+C:\Users\jeffr\OneDrive\Escritorio\Proyecto Falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Properties.Resources.resources
+C:\Users\jeffr\OneDrive\Escritorio\Proyecto Falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.GenerateResource.cache
+C:\Users\jeffr\OneDrive\Escritorio\Proyecto Falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.csproj.CoreCompileInputs.cache
+C:\Users\jeffr\OneDrive\Escritorio\Proyecto Falcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.exe.config
+C:\Users\jeffr\OneDrive\Escritorio\Proyecto Falcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.exe
+C:\Users\jeffr\OneDrive\Escritorio\Proyecto Falcom\Proyecto_Falcom_Bodega\bin\Debug\Proyecto_Falcom_Bodega.pdb
+C:\Users\jeffr\OneDrive\Escritorio\Proyecto Falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.exe
+C:\Users\jeffr\OneDrive\Escritorio\Proyecto Falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.pdb
+C:\Users\jeffr\OneDrive\Escritorio\Proyecto Falcom\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.DetalleSolicitudes.resources
