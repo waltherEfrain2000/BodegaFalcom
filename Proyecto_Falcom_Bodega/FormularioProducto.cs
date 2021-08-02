@@ -243,5 +243,26 @@ namespace Proyecto_Falcom_Bodega
         {
             LimpiarCasillas();
         }
+
+        private void txtCosto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+                e.Handled = true;
+            if (e.KeyChar == '.' && txtCosto.Text.Contains("."))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtPeso_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            VisualizacionReporteProducto reporte = new VisualizacionReporteProducto();
+            reporte.Show();
+        }
     }
 }

@@ -43,6 +43,7 @@ namespace Proyecto_Falcom_Bodega
             this.txtPeso = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.btnReporte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,6 +157,7 @@ namespace Proyecto_Falcom_Bodega
             this.txtCosto.Name = "txtCosto";
             this.txtCosto.Size = new System.Drawing.Size(142, 34);
             this.txtCosto.TabIndex = 10;
+            this.txtCosto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCosto_KeyPress);
             // 
             // txtPeso
             // 
@@ -164,6 +166,7 @@ namespace Proyecto_Falcom_Bodega
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Size = new System.Drawing.Size(115, 34);
             this.txtPeso.TabIndex = 11;
+            this.txtPeso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeso_KeyPress);
             // 
             // txtDescripcion
             // 
@@ -183,11 +186,23 @@ namespace Proyecto_Falcom_Bodega
             this.txtCodigo.TabIndex = 13;
             this.txtCodigo.Visible = false;
             // 
+            // btnReporte
+            // 
+            this.btnReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporte.Location = new System.Drawing.Point(767, 155);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(122, 36);
+            this.btnReporte.TabIndex = 14;
+            this.btnReporte.Text = "Reporte";
+            this.btnReporte.UseVisualStyleBackColor = true;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
+            // 
             // FormularioProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtPeso);
@@ -229,6 +244,7 @@ namespace Proyecto_Falcom_Bodega
         private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.Button btnReporte;
     }
 }
 
