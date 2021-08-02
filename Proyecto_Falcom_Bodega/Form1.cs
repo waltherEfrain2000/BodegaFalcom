@@ -42,7 +42,34 @@ namespace Proyecto_Falcom_Bodega
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
+            abrirFormulariohijo(new FormularioProducto());
+        }
 
+        private void materialButton2_Click(object sender, EventArgs e)
+        {
+            abrirFormulariohijo(new Clientes());
+        }
+
+        private void materialButton3_Click(object sender, EventArgs e)
+        {
+            abrirFormulariohijo(new CrearSolicitud());
+        }
+
+        private void materialButton4_Click(object sender, EventArgs e)
+        {
+            abrirFormulariohijo(new Usuarios());
+        }
+
+        private void materialButton5_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
+
+        private void materialButton6_Click(object sender, EventArgs e)
+        {
+            abrirFormulariohijo(new Frm_Inventario());
         }
     }
 }
