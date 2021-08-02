@@ -13,7 +13,7 @@ namespace Proyecto_Falcom_Bodega
     {
         public static SqlConnection Conectar()
         {
-            SqlConnection cn = new SqlConnection("SERVER=FOXHOUND//SQLEXPRESS;DATABASE=BODEGA_FALCON;integratd security=true");
+            SqlConnection cn = new SqlConnection("SERVER=FOXHOUND\\RAIDEN007;DATABASE=BODEGA_FALCON_C;integrated security=true");
             cn.Open();
             return cn;  
         }
