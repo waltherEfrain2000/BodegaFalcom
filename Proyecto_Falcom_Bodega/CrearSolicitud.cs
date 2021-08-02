@@ -157,5 +157,102 @@ namespace Proyecto_Falcom_Bodega
             }
         }
 
+        private void listCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CrearSolicitud_Load_1(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'bodegaFalcomDataSet.colaboradores' Puede moverla o quitarla según sea necesario.
+            this.colaboradoresTableAdapter.Fill(this.bodegaFalcomDataSet.colaboradores);
+            // TODO: esta línea de código carga datos en la tabla 'bodegaFalcomDataSet.Clientes' Puede moverla o quitarla según sea necesario.
+            this.clientesTableAdapter.Fill(this.bodegaFalcomDataSet.Clientes);
+
+        }
+
+        private void btnCrear_Click_1(object sender, EventArgs e)
+        {
+            int verificacionCampos = VerificarCampos();
+            conexion.abrir();
+            if (verificacionCampos == 1)
+            {
+                MessageBox.Show("Debe un cliente y un empleado.");
+            }
+            else if (verificacionCampos == 0)
+            {
+                int idCliente = Convert.ToInt32(listCliente.SelectedValue);
+                int idEmpleado = Convert.ToInt32(listEmpleado.SelectedValue);
+                try
+                {
+                    SqlCommand crearSolicitud = new SqlCommand("AgregarSolicitud", conexion.Conectarbd);
+                    crearSolicitud.CommandType = CommandType.StoredProcedure;
+
+                    crearSolicitud.Parameters.AddWithValue("@codigoCliente", idCliente);
+                    crearSolicitud.Parameters.AddWithValue("@codigoColaborador", idEmpleado);
+                    crearSolicitud.Parameters.AddWithValue("@fechaSolicitud", lblfecha.Text);
+
+                    conexion.abrir();
+
+                    crearSolicitud.ExecuteNonQuery();
+                    MessageBox.Show("Solicitud creada correctamente.");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ha ocurrido un error.");
+                }
+                finally
+                {
+                    conexion.cerrar();
+                    MostrarSolicitudes();
+                    conexion.RecibirCodigoSolicitud(1, 1);
+                    DetalleSolicitudes ventana = new DetalleSolicitudes();
+                    ventana.Show();
+                    this.Hide();
+                }
+            }
+        }
+
+        private void btnEliminar_Click_1(object sender, EventArgs e)
+        {
+            if (dgvSolicitudes.SelectedRows == null)
+            {
+                MessageBox.Show("Debe seleccionar una solicitud de la lista.");
+            }
+            else
+            {
+                MessageBoxButtons botones = MessageBoxButtons.YesNo;
+                DialogResult resultado = MessageBox.Show("¿Está seguro que desea eliminar esta solicitud?", "Advertencia", botones);
+
+                if (resultado == System.Windows.Forms.DialogResult.Yes)
+                {
+                    try
+                    {
+                        conexion.globalSolicitud = Convert.ToInt32(dgvSolicitudes.CurrentRow.Cells["Solicitud"].Value.ToString());
+                        SqlCommand crearMarca = new SqlCommand("EliminarSolicitud", conexion.Conectarbd);
+                        crearMarca.CommandType = CommandType.StoredProcedure;
+                        crearMarca.Parameters.AddWithValue("@codigoSolicitud", conexion.globalSolicitud);
+                        conexion.abrir();
+                        crearMarca.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        throw ex;
+                    }
+                    finally
+                    {
+                        conexion.cerrar();
+                        MostrarSolicitudes();
+                        MessageBox.Show("Solicitud eliminada correctamente.");
+                    }
+                }
+                else { }
+            }
+        }
+
+        private void dgvSolicitudes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

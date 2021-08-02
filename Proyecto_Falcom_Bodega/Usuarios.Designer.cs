@@ -65,6 +65,7 @@ namespace Proyecto_Falcom_Bodega
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(174, 20);
             this.txtBuscar.TabIndex = 35;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // txtrol
             // 
@@ -73,6 +74,7 @@ namespace Proyecto_Falcom_Bodega
             this.txtrol.Name = "txtrol";
             this.txtrol.Size = new System.Drawing.Size(174, 21);
             this.txtrol.TabIndex = 34;
+            this.txtrol.SelectedIndexChanged += new System.EventHandler(this.txtrol_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
@@ -93,6 +95,7 @@ namespace Proyecto_Falcom_Bodega
             this.button3.TabIndex = 32;
             this.button3.Text = "Modificar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // btnEliminar
             // 
@@ -102,6 +105,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnEliminar.TabIndex = 31;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click_1);
             // 
             // btnLimpiar
             // 
@@ -111,6 +115,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnLimpiar.TabIndex = 30;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click_1);
             // 
             // btnGuardar
             // 
@@ -120,6 +125,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnGuardar.TabIndex = 29;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
             // cmbEstado
             // 
@@ -214,6 +220,7 @@ namespace Proyecto_Falcom_Bodega
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Usuarios";
             this.Text = "Usuarios";
+            this.Load += new System.EventHandler(this.Usuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

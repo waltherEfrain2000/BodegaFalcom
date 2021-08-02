@@ -67,11 +67,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BodegaFalcomDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BodegaFalcomDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colaboradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Colaboradores.Designer.cs">
+      <DependentUpon>Colaboradores.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="CrearSolicitud.cs">
@@ -112,6 +123,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteColaborador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteColaborador.Designer.cs">
+      <DependentUpon>ReporteColaborador.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReporteProductosTotales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +151,9 @@
     </Compile>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Colaboradores.resx">
+      <DependentUpon>Colaboradores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrearSolicitud.resx">
       <DependentUpon>CrearSolicitud.cs</DependentUpon>
@@ -163,13 +183,32 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="rdlcColaboradores.rdlc" />
+    <EmbeddedResource Include="ReporteColaborador.resx">
+      <DependentUpon>ReporteColaborador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReporteProducto.rdlc" />
+    <EmbeddedResource Include="ReporteProductos.rdlc" />
     <EmbeddedResource Include="ReporteProductosTotales.resx">
       <DependentUpon>ReporteProductosTotales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VisualizacionReporteProducto.resx">
+      <DependentUpon>VisualizacionReporteProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BodegaFalcomDataSet.xsc">
+      <DependentUpon>BodegaFalcomDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BodegaFalcomDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BodegaFalcomDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BodegaFalcomDataSet.xss">
+      <DependentUpon>BodegaFalcomDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

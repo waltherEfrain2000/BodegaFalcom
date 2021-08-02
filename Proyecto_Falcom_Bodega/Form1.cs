@@ -71,5 +71,10 @@ namespace Proyecto_Falcom_Bodega
         {
             abrirFormulariohijo(new Frm_Inventario());
         }
+
+        private void materialButton7_Click(object sender, EventArgs e)
+        {
+            abrirFormulariohijo(new Colaboradores());
+        }
     }
 }

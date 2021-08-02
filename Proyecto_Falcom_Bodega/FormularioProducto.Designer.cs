@@ -57,6 +57,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnReporte.TabIndex = 29;
             this.btnReporte.Text = "Reporte";
             this.btnReporte.UseVisualStyleBackColor = true;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click_1);
             // 
             // txtCodigo
             // 
@@ -159,6 +160,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnLimpiar.TabIndex = 19;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnEliminar
             // 
@@ -170,6 +172,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnEliminar.TabIndex = 18;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -181,6 +184,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnModificar.TabIndex = 17;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnIngresar
             // 
@@ -192,6 +196,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnIngresar.TabIndex = 16;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // dgvProducto
             // 
@@ -203,6 +208,7 @@ namespace Proyecto_Falcom_Bodega
             this.dgvProducto.RowTemplate.Height = 24;
             this.dgvProducto.Size = new System.Drawing.Size(718, 263);
             this.dgvProducto.TabIndex = 15;
+            this.dgvProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducto_CellContentClick);
             // 
             // FormularioProducto
             // 

@@ -40,7 +40,6 @@ namespace Proyecto_Falcom_Bodega
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtDireccionCliente = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnNuevoCliente = new System.Windows.Forms.Button();
             this.btnEliminarCliente = new System.Windows.Forms.Button();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
@@ -171,16 +170,6 @@ namespace Proyecto_Falcom_Bodega
             this.txtDireccionCliente.Size = new System.Drawing.Size(187, 29);
             this.txtDireccionCliente.TabIndex = 9;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(173, 501);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(235, 27);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Reporte";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // btnNuevoCliente
             // 
             this.btnNuevoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -191,6 +180,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnNuevoCliente.TabIndex = 20;
             this.btnNuevoCliente.Text = "Nuevo";
             this.btnNuevoCliente.UseVisualStyleBackColor = true;
+            this.btnNuevoCliente.Click += new System.EventHandler(this.btnNuevoCliente_Click_1);
             // 
             // btnEliminarCliente
             // 
@@ -202,6 +192,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnEliminarCliente.TabIndex = 18;
             this.btnEliminarCliente.Text = "Eliminar";
             this.btnEliminarCliente.UseVisualStyleBackColor = true;
+            this.btnEliminarCliente.Click += new System.EventHandler(this.btnEliminarCliente_Click_1);
             // 
             // dgvClientes
             // 
@@ -214,6 +205,7 @@ namespace Proyecto_Falcom_Bodega
             this.dgvClientes.RowTemplate.Height = 28;
             this.dgvClientes.Size = new System.Drawing.Size(585, 198);
             this.dgvClientes.TabIndex = 19;
+            this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);
             // 
             // btnEditarCliente
             // 
@@ -225,6 +217,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnEditarCliente.TabIndex = 17;
             this.btnEditarCliente.Text = "Editar";
             this.btnEditarCliente.UseVisualStyleBackColor = true;
+            this.btnEditarCliente.Click += new System.EventHandler(this.btnEditarCliente_Click_1);
             // 
             // BtnGuardarCliente
             // 
@@ -236,13 +229,13 @@ namespace Proyecto_Falcom_Bodega
             this.BtnGuardarCliente.TabIndex = 16;
             this.BtnGuardarCliente.Text = "Guardar";
             this.BtnGuardarCliente.UseVisualStyleBackColor = true;
+            this.BtnGuardarCliente.Click += new System.EventHandler(this.BtnGuardarCliente_Click_1);
             // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 537);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(631, 508);
             this.Controls.Add(this.btnNuevoCliente);
             this.Controls.Add(this.btnEliminarCliente);
             this.Controls.Add(this.dgvClientes);
@@ -252,6 +245,7 @@ namespace Proyecto_Falcom_Bodega
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Clientes";
             this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.Clientes_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
@@ -272,7 +266,6 @@ namespace Proyecto_Falcom_Bodega
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtDireccionCliente;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnNuevoCliente;
         private System.Windows.Forms.Button btnEliminarCliente;
         private System.Windows.Forms.DataGridView dgvClientes;

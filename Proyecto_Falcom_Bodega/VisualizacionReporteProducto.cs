@@ -16,5 +16,13 @@ namespace Proyecto_Falcom_Bodega
         {
             InitializeComponent();
         }
+
+        private void VisualizacionReporteProducto_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'BodegaFalcomDataSet.ReporteProducto' Puede moverla o quitarla según sea necesario.
+            this.ReporteProductoTableAdapter.Fill(this.BodegaFalcomDataSet.ReporteProducto);
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

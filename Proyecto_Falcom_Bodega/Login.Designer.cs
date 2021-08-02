@@ -79,7 +79,7 @@ namespace Proyecto_Falcom_Bodega
             this.txtusuario.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtusuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtusuario.Depth = 0;
-            this.txtusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtusuario.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtusuario.LeadingIcon = null;
             this.txtusuario.Location = new System.Drawing.Point(23, 260);
             this.txtusuario.MaxLength = 50;
@@ -95,7 +95,7 @@ namespace Proyecto_Falcom_Bodega
             // 
             this.txtcontraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtcontraseña.Depth = 0;
-            this.txtcontraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtcontraseña.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtcontraseña.LeadingIcon = null;
             this.txtcontraseña.Location = new System.Drawing.Point(23, 351);
             this.txtcontraseña.MaxLength = 50;
@@ -119,6 +119,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "Iniciar Sesión";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
             // 
             // pictureBox1
             // 

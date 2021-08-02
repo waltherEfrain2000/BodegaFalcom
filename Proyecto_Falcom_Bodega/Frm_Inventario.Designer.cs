@@ -95,6 +95,7 @@ namespace Proyecto_Falcom_Bodega
             this.button1.TabIndex = 36;
             this.button1.Text = "Ver productos almacenados";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // dateTimePicker3
             // 
@@ -116,6 +117,7 @@ namespace Proyecto_Falcom_Bodega
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(796, 205);
             this.dataGridView2.TabIndex = 34;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick_1);
             // 
             // btnlimpiar
             // 
@@ -133,6 +135,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnlimpiar.TabIndex = 33;
             this.btnlimpiar.Text = "Limpiar";
             this.btnlimpiar.UseVisualStyleBackColor = false;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click_1);
             // 
             // btneliminar
             // 
@@ -148,6 +151,7 @@ namespace Proyecto_Falcom_Bodega
             this.btneliminar.TabIndex = 32;
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.UseVisualStyleBackColor = false;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // btnmodificar
             // 
@@ -162,6 +166,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnmodificar.TabIndex = 31;
             this.btnmodificar.Text = "Modificar";
             this.btnmodificar.UseVisualStyleBackColor = false;
+            this.btnmodificar.Click += new System.EventHandler(this.btnmodificar_Click);
             // 
             // btnInsertar
             // 
@@ -176,6 +181,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnInsertar.TabIndex = 30;
             this.btnInsertar.Text = "Insertar";
             this.btnInsertar.UseVisualStyleBackColor = false;
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click_1);
             // 
             // label5
             // 
@@ -286,6 +292,7 @@ namespace Proyecto_Falcom_Bodega
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(328, 150);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // dateTimePicker2
             // 
@@ -343,6 +350,7 @@ namespace Proyecto_Falcom_Bodega
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Inventario";
             this.Text = "Frm_Inventario";
+            this.Load += new System.EventHandler(this.Frm_Inventario_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

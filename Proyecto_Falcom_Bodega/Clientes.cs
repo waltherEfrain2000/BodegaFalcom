@@ -18,6 +18,11 @@ namespace Proyecto_Falcom_Bodega
         public Clientes()
         {
             InitializeComponent();
+            Conexion.ConectarCliente();
+            MessageBox.Show("conexion exitosa");
+            dgvClientes.DataSource = llenar_grid();
+            txtCodClientes.Enabled = false;
+            txtNombreCliente.Focus();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -117,6 +122,81 @@ namespace Proyecto_Falcom_Bodega
             txtTelefonoCliente.Clear();
             txtNombreCliente.Focus();
 
+        }
+
+        private void Clientes_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnGuardarCliente_Click_1(object sender, EventArgs e)
+        {
+            Conexion.ConectarCliente();
+            string insertar = "INSERT INTO CLIENTES (Nombre_Cliente,Identificador_Cliente,Direccion_Cliente,Telefono)VALUES(@Nombre_Cliente,@Identificador_Cliente,@Direccion_Cliente,@Telefono)";
+            SqlCommand cmd1 = new SqlCommand(insertar, Conexion.ConectarCliente());
+            cmd1.Parameters.AddWithValue("@Nombre_Cliente", txtNombreCliente.Text);
+            cmd1.Parameters.AddWithValue("@Identificador_Cliente", txtIdentificadorCliente.Text);
+            cmd1.Parameters.AddWithValue("@Direccion_Cliente", txtDireccionCliente.Text);
+            cmd1.Parameters.AddWithValue("@Telefono", txtTelefonoCliente.Text);
+
+            cmd1.ExecuteNonQuery();
+
+            MessageBox.Show("Los datos fueron agregador correctamente");
+            dgvClientes.DataSource = llenar_grid();
+        }
+
+        private void btnEditarCliente_Click_1(object sender, EventArgs e)
+        {
+            Conexion.ConectarCliente();
+            string actualizar = "UPDATE CLIENTES SET Nombre=@Nombre_Cliente, Identificador_Cliente=@Identificador_Cliente,Direccion-Cliente=@Direccion_Cliente,Telefono=@Telefono WHERE Nombre_Cliente=@Nombre_Cliente";
+            SqlCommand cmd2 = new SqlCommand(actualizar, Conexion.ConectarCliente());
+
+            cmd2.Parameters.AddWithValue("@Nombre_Cliente", txtNombreCliente.Text);
+            cmd2.Parameters.AddWithValue("@Identificador_Cliente", txtIdentificadorCliente.Text);
+            cmd2.Parameters.AddWithValue("@Direccion_Cliente", txtDireccionCliente.Text);
+            cmd2.Parameters.AddWithValue("@Telefono", txtTelefonoCliente.Text);
+
+            cmd2.ExecuteNonQuery();
+            MessageBox.Show("Los datos fueron actualizados correctamente");
+            dgvClientes.DataSource = llenar_grid();
+        }
+
+        private void btnEliminarCliente_Click_1(object sender, EventArgs e)
+        {
+            Conexion.ConectarCliente();
+            string eliminar = "DELETE FROM CLIENTES WHERE Cod_cliente = @Cod_Cliente";
+            SqlCommand cmd3 = new SqlCommand(eliminar, Conexion.ConectarCliente());
+
+            cmd3.Parameters.AddWithValue("@Cod_cliente", txtCodClientes.Text);
+            cmd3.ExecuteNonQuery();
+
+            MessageBox.Show("Datos eliminados correctamente");
+            dgvClientes.DataSource = llenar_grid();
+        }
+
+        private void btnNuevoCliente_Click_1(object sender, EventArgs e)
+        {
+            txtCodClientes.Clear();
+            txtNombreCliente.Clear();
+            txtIdentificadorCliente.Clear();
+            txtDireccionCliente.Clear();
+            txtTelefonoCliente.Clear();
+            txtNombreCliente.Focus();
+        }
+
+        private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txtCodClientes.Text = dgvClientes.CurrentRow.Cells[0].Value.ToString();
+                txtNombreCliente.Text = dgvClientes.CurrentRow.Cells[1].Value.ToString();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

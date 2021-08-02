@@ -90,3 +90,6 @@ C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\asm
 C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\asmr a mimin\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Login.resources
 C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\asmr a mimin\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Frm_Inventario.resources
 C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\asmr a mimin\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.ReporteProductosTotales.resources
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\asmr a mimin\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.Colaboradores.resources
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\asmr a mimin\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.ReporteColaborador.resources
+C:\Users\G7\Desktop\CLASES\4-SISTEMSA INTELIGENTES PARA NEGOCIOS\III PARCIAL\asmr a mimin\Proyecto_Falcom_Bodega\obj\Debug\Proyecto_Falcom_Bodega.VisualizacionReporteProducto.resources

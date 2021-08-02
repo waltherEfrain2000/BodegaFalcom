@@ -20,6 +20,7 @@ namespace Proyecto_Falcom_Bodega
         public FormularioProducto()
         {
             InitializeComponent();
+            LlenarDataGridView();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -263,6 +264,96 @@ namespace Proyecto_Falcom_Bodega
         {
             VisualizacionReporteProducto reporte = new VisualizacionReporteProducto();
             reporte.Show();
+        }
+
+        private void btnReporte_Click_1(object sender, EventArgs e)
+        {
+            VisualizacionReporteProducto reporte = new VisualizacionReporteProducto();
+            reporte.Show();
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            if (VerificacionDeDatos())
+            {
+                try
+                {
+                    InsertarProducto();
+
+                    MessageBox.Show("Los datos han sido ingresados de manera exitosa.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                    MessageBox.Show("Ha habido un error al momento de ingresar los datos.");
+                }
+                finally
+                {
+                    LimpiarCasillas();
+                    LlenarDataGridView();
+                }
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (VerificacionDeDatos())
+            {
+                try
+                {
+                    ModificarProduccion();
+
+                    MessageBox.Show("Los datos han sido modificados de manera exitosa.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                    MessageBox.Show("Ha habido un error al momento de modificar los datos.");
+                }
+                finally
+                {
+                    LimpiarCasillas();
+                    LlenarDataGridView();
+                }
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BorrarProduccion();
+
+                MessageBox.Show("Los datos han sido eliminados de manera exitosa.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                MessageBox.Show("Ha habido un error al momento de borrar los datos.");
+            }
+            finally
+            {
+                LimpiarCasillas();
+                LlenarDataGridView();
+            }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiarCasillas();
+        }
+
+        private void dgvProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvProducto.Rows[e.RowIndex];
+                txtCodigo.Text = row.Cells[0].Value.ToString();
+                txtNombre.Text = row.Cells[1].Value.ToString();
+                txtCosto.Text = row.Cells[2].Value.ToString();
+                txtPeso.Text = row.Cells[3].Value.ToString();
+                txtDescripcion.Text = row.Cells[4].Value.ToString();
+            }
         }
     }
 }

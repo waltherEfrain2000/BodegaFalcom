@@ -29,19 +29,27 @@ namespace Proyecto_Falcom_Bodega
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label6 = new System.Windows.Forms.Label();
             this.dgvSolicitudes = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.lblfecha = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCrear = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.listEmpleado = new System.Windows.Forms.ListBox();
             this.listCliente = new System.Windows.Forms.ListBox();
+            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bodegaFalcomDataSet = new Proyecto_Falcom_Bodega.BodegaFalcomDataSet();
+            this.clientesTableAdapter = new Proyecto_Falcom_Bodega.BodegaFalcomDataSetTableAdapters.ClientesTableAdapter();
+            this.colaboradoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.colaboradoresTableAdapter = new Proyecto_Falcom_Bodega.BodegaFalcomDataSetTableAdapters.colaboradoresTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSolicitudes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bodegaFalcomDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradoresBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -66,8 +74,9 @@ namespace Proyecto_Falcom_Bodega
             this.dgvSolicitudes.Name = "dgvSolicitudes";
             this.dgvSolicitudes.ReadOnly = true;
             this.dgvSolicitudes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSolicitudes.Size = new System.Drawing.Size(462, 251);
+            this.dgvSolicitudes.Size = new System.Drawing.Size(462, 336);
             this.dgvSolicitudes.TabIndex = 20;
+            this.dgvSolicitudes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSolicitudes_CellContentClick);
             // 
             // label5
             // 
@@ -99,16 +108,6 @@ namespace Proyecto_Falcom_Bodega
             this.label3.TabIndex = 17;
             this.label3.Text = "Fecha: ";
             // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(767, 341);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(137, 57);
-            this.btnEliminar.TabIndex = 15;
-            this.btnEliminar.Text = "Eliminar Solicitud";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            // 
             // btnCrear
             // 
             this.btnCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -118,6 +117,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnCrear.TabIndex = 16;
             this.btnCrear.Text = "Solicitud Nueva";
             this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click_1);
             // 
             // label4
             // 
@@ -151,6 +151,7 @@ namespace Proyecto_Falcom_Bodega
             // 
             // listEmpleado
             // 
+            this.listEmpleado.DataSource = this.colaboradoresBindingSource;
             this.listEmpleado.DisplayMember = "nombreColaborador";
             this.listEmpleado.FormattingEnabled = true;
             this.listEmpleado.Location = new System.Drawing.Point(230, 62);
@@ -161,6 +162,7 @@ namespace Proyecto_Falcom_Bodega
             // 
             // listCliente
             // 
+            this.listCliente.DataSource = this.clientesBindingSource;
             this.listCliente.DisplayMember = "NombreCliente";
             this.listCliente.FormattingEnabled = true;
             this.listCliente.Location = new System.Drawing.Point(12, 62);
@@ -168,6 +170,30 @@ namespace Proyecto_Falcom_Bodega
             this.listCliente.Size = new System.Drawing.Size(137, 251);
             this.listCliente.TabIndex = 10;
             this.listCliente.ValueMember = "CodigoCliente";
+            this.listCliente.SelectedIndexChanged += new System.EventHandler(this.listCliente_SelectedIndexChanged);
+            // 
+            // clientesBindingSource
+            // 
+            this.clientesBindingSource.DataMember = "Clientes";
+            this.clientesBindingSource.DataSource = this.bodegaFalcomDataSet;
+            // 
+            // bodegaFalcomDataSet
+            // 
+            this.bodegaFalcomDataSet.DataSetName = "BodegaFalcomDataSet";
+            this.bodegaFalcomDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientesTableAdapter
+            // 
+            this.clientesTableAdapter.ClearBeforeFill = true;
+            // 
+            // colaboradoresBindingSource
+            // 
+            this.colaboradoresBindingSource.DataMember = "colaboradores";
+            this.colaboradoresBindingSource.DataSource = this.bodegaFalcomDataSet;
+            // 
+            // colaboradoresTableAdapter
+            // 
+            this.colaboradoresTableAdapter.ClearBeforeFill = true;
             // 
             // CrearSolicitud
             // 
@@ -179,7 +205,6 @@ namespace Proyecto_Falcom_Bodega
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblfecha);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -189,7 +214,11 @@ namespace Proyecto_Falcom_Bodega
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CrearSolicitud";
             this.Text = "CrearSolicitud";
+            this.Load += new System.EventHandler(this.CrearSolicitud_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSolicitudes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bodegaFalcomDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradoresBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,12 +231,16 @@ namespace Proyecto_Falcom_Bodega
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblfecha;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listEmpleado;
         private System.Windows.Forms.ListBox listCliente;
+        private BodegaFalcomDataSet bodegaFalcomDataSet;
+        private System.Windows.Forms.BindingSource clientesBindingSource;
+        private BodegaFalcomDataSetTableAdapters.ClientesTableAdapter clientesTableAdapter;
+        private System.Windows.Forms.BindingSource colaboradoresBindingSource;
+        private BodegaFalcomDataSetTableAdapters.colaboradoresTableAdapter colaboradoresTableAdapter;
     }
 }

@@ -29,6 +29,7 @@ namespace Proyecto_Falcom_Bodega
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,7 +40,15 @@ namespace Proyecto_Falcom_Bodega
             this.cmbProducto = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dgvCarrito = new System.Windows.Forms.DataGridView();
+            this.bodegaFalcomDataSet = new Proyecto_Falcom_Bodega.BodegaFalcomDataSet();
+            this.mostrarProductosSolicitudBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mostrarProductosSolicitudTableAdapter = new Proyecto_Falcom_Bodega.BodegaFalcomDataSetTableAdapters.MostrarProductosSolicitudTableAdapter();
+            this.mostrarProductosInventarioSolicitudBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mostrarProductosInventarioSolicitudTableAdapter = new Proyecto_Falcom_Bodega.BodegaFalcomDataSetTableAdapters.MostrarProductosInventarioSolicitudTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bodegaFalcomDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarProductosSolicitudBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarProductosInventarioSolicitudBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEliminar
@@ -51,6 +60,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnEliminar.TabIndex = 20;
             this.btnEliminar.Text = "Quitar Producto";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click_1);
             // 
             // button2
             // 
@@ -61,6 +71,7 @@ namespace Proyecto_Falcom_Bodega
             this.button2.TabIndex = 19;
             this.button2.Text = "<< Regresar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // label3
             // 
@@ -111,6 +122,7 @@ namespace Proyecto_Falcom_Bodega
             // 
             // cmbProducto
             // 
+            this.cmbProducto.DataSource = this.mostrarProductosInventarioSolicitudBindingSource;
             this.cmbProducto.DisplayMember = "NombreProducto";
             this.cmbProducto.FormattingEnabled = true;
             this.cmbProducto.Location = new System.Drawing.Point(104, 119);
@@ -128,6 +140,7 @@ namespace Proyecto_Falcom_Bodega
             this.btnAgregar.TabIndex = 12;
             this.btnAgregar.Text = "Añadir";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click_1);
             // 
             // dgvCarrito
             // 
@@ -143,6 +156,30 @@ namespace Proyecto_Falcom_Bodega
             this.dgvCarrito.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCarrito.Size = new System.Drawing.Size(368, 150);
             this.dgvCarrito.TabIndex = 11;
+            this.dgvCarrito.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCarrito_CellContentClick);
+            // 
+            // bodegaFalcomDataSet
+            // 
+            this.bodegaFalcomDataSet.DataSetName = "BodegaFalcomDataSet";
+            this.bodegaFalcomDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mostrarProductosSolicitudBindingSource
+            // 
+            this.mostrarProductosSolicitudBindingSource.DataMember = "MostrarProductosSolicitud";
+            this.mostrarProductosSolicitudBindingSource.DataSource = this.bodegaFalcomDataSet;
+            // 
+            // mostrarProductosSolicitudTableAdapter
+            // 
+            this.mostrarProductosSolicitudTableAdapter.ClearBeforeFill = true;
+            // 
+            // mostrarProductosInventarioSolicitudBindingSource
+            // 
+            this.mostrarProductosInventarioSolicitudBindingSource.DataMember = "MostrarProductosInventarioSolicitud";
+            this.mostrarProductosInventarioSolicitudBindingSource.DataSource = this.bodegaFalcomDataSet;
+            // 
+            // mostrarProductosInventarioSolicitudTableAdapter
+            // 
+            this.mostrarProductosInventarioSolicitudTableAdapter.ClearBeforeFill = true;
             // 
             // DetalleSolicitudes
             // 
@@ -161,8 +198,13 @@ namespace Proyecto_Falcom_Bodega
             this.Controls.Add(this.dgvCarrito);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DetalleSolicitudes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DetalleSolicitudes";
+            this.Load += new System.EventHandler(this.DetalleSolicitudes_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bodegaFalcomDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarProductosSolicitudBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarProductosInventarioSolicitudBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +222,10 @@ namespace Proyecto_Falcom_Bodega
         private System.Windows.Forms.ComboBox cmbProducto;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.DataGridView dgvCarrito;
+        private System.Windows.Forms.BindingSource mostrarProductosSolicitudBindingSource;
+        private BodegaFalcomDataSet bodegaFalcomDataSet;
+        private BodegaFalcomDataSetTableAdapters.MostrarProductosSolicitudTableAdapter mostrarProductosSolicitudTableAdapter;
+        private System.Windows.Forms.BindingSource mostrarProductosInventarioSolicitudBindingSource;
+        private BodegaFalcomDataSetTableAdapters.MostrarProductosInventarioSolicitudTableAdapter mostrarProductosInventarioSolicitudTableAdapter;
     }
 }

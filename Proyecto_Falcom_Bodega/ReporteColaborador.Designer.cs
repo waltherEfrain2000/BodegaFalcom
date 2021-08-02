@@ -1,7 +1,7 @@
 ﻿
 namespace Proyecto_Falcom_Bodega
 {
-    partial class VisualizacionReporteProducto
+    partial class ReporteColaborador
     {
         /// <summary>
         /// Required designer variable.
@@ -33,19 +33,19 @@ namespace Proyecto_Falcom_Bodega
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.BodegaFalcomDataSet = new Proyecto_Falcom_Bodega.BodegaFalcomDataSet();
-            this.ReporteProductoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ReporteProductoTableAdapter = new Proyecto_Falcom_Bodega.BodegaFalcomDataSetTableAdapters.ReporteProductoTableAdapter();
+            this.colaboradoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.colaboradoresTableAdapter = new Proyecto_Falcom_Bodega.BodegaFalcomDataSetTableAdapters.colaboradoresTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.BodegaFalcomDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ReporteProductoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradoresBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.ReporteProductoBindingSource;
+            reportDataSource1.Value = this.colaboradoresBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Proyecto_Falcom_Bodega.ReporteProducto.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Proyecto_Falcom_Bodega.rdlcColaboradores.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
@@ -57,26 +57,26 @@ namespace Proyecto_Falcom_Bodega
             this.BodegaFalcomDataSet.DataSetName = "BodegaFalcomDataSet";
             this.BodegaFalcomDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // ReporteProductoBindingSource
+            // colaboradoresBindingSource
             // 
-            this.ReporteProductoBindingSource.DataMember = "ReporteProducto";
-            this.ReporteProductoBindingSource.DataSource = this.BodegaFalcomDataSet;
+            this.colaboradoresBindingSource.DataMember = "colaboradores";
+            this.colaboradoresBindingSource.DataSource = this.BodegaFalcomDataSet;
             // 
-            // ReporteProductoTableAdapter
+            // colaboradoresTableAdapter
             // 
-            this.ReporteProductoTableAdapter.ClearBeforeFill = true;
+            this.colaboradoresTableAdapter.ClearBeforeFill = true;
             // 
-            // VisualizacionReporteProducto
+            // ReporteColaborador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "VisualizacionReporteProducto";
-            this.Text = "VisualizacionReporteProducto";
-            this.Load += new System.EventHandler(this.VisualizacionReporteProducto_Load);
+            this.Name = "ReporteColaborador";
+            this.Text = "ReporteColaborador";
+            this.Load += new System.EventHandler(this.ReporteColaborador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BodegaFalcomDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ReporteProductoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colaboradoresBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -84,8 +84,8 @@ namespace Proyecto_Falcom_Bodega
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource ReporteProductoBindingSource;
+        private System.Windows.Forms.BindingSource colaboradoresBindingSource;
         private BodegaFalcomDataSet BodegaFalcomDataSet;
-        private BodegaFalcomDataSetTableAdapters.ReporteProductoTableAdapter ReporteProductoTableAdapter;
+        private BodegaFalcomDataSetTableAdapters.colaboradoresTableAdapter colaboradoresTableAdapter;
     }
 }
