@@ -16,7 +16,11 @@ namespace Proyecto_Falcom_Bodega
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new Menú());
+=======
+            Application.Run(new Colaboradores());
+>>>>>>> ffec8271edf094790b64219621e1e008b6a552c5
         }
     }
 }

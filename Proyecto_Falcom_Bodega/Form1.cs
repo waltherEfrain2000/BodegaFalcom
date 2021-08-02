@@ -45,5 +45,10 @@ namespace Proyecto_Falcom_Bodega
             this.panelhijo.Tag = fh;
             fh.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
